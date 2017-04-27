@@ -1,3 +1,3 @@
 # opkollenweb
 
-Code is in gh-pages branch
+Starting dev on new opkollen website
