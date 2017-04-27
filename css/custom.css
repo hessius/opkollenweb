@@ -11,10 +11,26 @@
 	bottom: -100px;
 	left: 0;
 	width: 100%;
+	display: none;
 }
 
 section#contact,
+section#healthcare,
+section#healthcare2,
 footer {
-	z-index: 999;
+	z-index: 99;
 	position: relative;
+}
+
+.white-t p.text {
+	color: #FFF;
+}
+
+.white-t p.text-muted {
+	color: #f7f7f7;
+}
+
+#healthcare {
+	text-align: center;
+	background: #fff;
 }
