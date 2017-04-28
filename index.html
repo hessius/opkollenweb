@@ -58,7 +58,13 @@
                         <a class="page-scroll" href="#download">Ladda ned</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#video">Video</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#features">Vad gör Operationskollen?</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#healthcare">Vårdgivare</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Kontakta oss</a>
@@ -88,7 +94,12 @@
                             <div class="device">
                                 <div class="screen">
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/sc1.png" class="img-responsive" alt="">
+                                    <img src="img/sc1.png" class="img-responsive top" alt="">
+                                    <img src="img/sc3.jpg" class="img-responsive one" alt="">
+                                    <img src="img/sc2.png" class="img-responsive two" alt="">
+                                    <img src="img/sc4.png" class="img-responsive three" alt="">
+                                    <img src="img/sc5.png" class="img-responsive four" alt="">
+                                    <img src="img/sc6.png" class="img-responsive five" alt="">
                                 </div>
                                 <div class="button">
                                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -163,7 +174,13 @@
                             <div class="device">
                                 <div class="screen">
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/sc2.png" class="img-responsive" alt=""> </div>
+                                    <img src="img/sc2.png" class="img-responsive top" alt="">
+                                    <img src="img/sc3.jpg" class="img-responsive one" alt="">
+                                    <img src="img/sc1.png" class="img-responsive two" alt="">
+                                    <img src="img/sc4.png" class="img-responsive three" alt="">
+                                    <img src="img/sc5.png" class="img-responsive four" alt="">
+                                    <img src="img/sc6.png" class="img-responsive five" alt="">
+                                </div>
                                 <div class="button">
                                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
                                 </div>
@@ -224,7 +241,8 @@
                                     <i class="icon-present text-primary"></i>
                                     <h3>Helt gratis</h3>
                                     <p class="text-muted">Vilken hjälp du får kring din operation ska inte avgöras av storleken på din plånbok.
-                                        Operationskollen är, och kommer alltid att vara, gratis för dig som patient och anhörig.</p>
+                                        Operationskollen är, och kommer alltid att vara, gratis för dig som patient och anhörig.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -314,21 +332,7 @@
                                     tar avstamp i den skriftliga information ni använder idag och informationen kan återanvändas
                                     hur ni vill.</p>
                                 <p class="text">Intresserad? Kontakta oss så ser vi hur Operationskollen kan passa för just er</p>
-                                <a href="mailto:jesper@pk.se" class="btn btn-outline btn-xl page-scroll" style="background: linear-gradient(to left, #7b4397, #dc2430);">Kontakta oss</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 device-col" style="display:none">
-                    <div class="device-container">
-                        <div class="device-mockup iphone6_plus portrait white">
-                            <div class="device">
-                                <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/sc2.png" class="img-responsive" alt=""> </div>
-                                <div class="button">
-                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                                </div>
+                                <a href="mailto:jesper@pk.se" class="btn btn-outline btn-xl page-scroll" style="background: url(../img/bg-pattern3.png), linear-gradient(to left, #43E4D5, #4BD2EB);">Kontakta oss</a>
                             </div>
                         </div>
                     </div>
@@ -385,12 +389,73 @@
     <script>
         $(document).ready(
             function () {
-                $(".device-col").stick_in_parent({
-                    bottoming: false,
-                    offset_top: -100,
+                $(document.body).trigger("sticky_kit:recalc");
+                $( window ).resize(function() {
+                    stick();
                 });
+                stick();
             }
         )
+        function stick() {
+            if ($(window).width()>991) {
+                $(".device-col").stick_in_parent({
+                    bottoming: false
+                });
+            } else {
+                $(".device-col").trigger("sticky_kit:detach");
+            }
+        }
+        function imageSwitcher(){
+            t = 2500; //Initial wait
+            s = 7500; //Stepper
+            setTimeout(function(){
+                $("img.five").css('opacity',0);
+                $("img.one").css('opacity',1);
+                $("img.top").css('opacity',0);
+            }, t);
+            setTimeout(function(){
+                $("img.top").css('opacity',1);
+            }, t = t+s);
+            setTimeout(function(){
+                $("img.one").css('opacity',0);
+                $("img.two").css('opacity',1);
+                $("img.top").css('opacity',0);
+            }, t = t+s);
+            setTimeout(function(){
+                $("img.top").css('opacity',1);
+            }, t = t+s);
+
+            setTimeout(function(){
+                $("img.two").css('opacity',0);
+                $("img.three").css('opacity',1);
+                $("img.top").css('opacity',0);
+            }, t = t+s);
+            setTimeout(function(){
+                $("img.top").css('opacity',1);
+            }, t = t+s);
+
+            setTimeout(function(){
+                $("img.three").css('opacity',0);
+                $("img.four").css('opacity',1);
+                $("img.top").css('opacity',0);
+            }, t = t+s);
+            setTimeout(function(){
+                $("img.top").css('opacity',1);
+            }, t = t+s);
+
+            setTimeout(function(){
+                $("img.four").css('opacity',0);
+                $("img.five").css('opacity',1);
+                $("img.top").css('opacity',0);
+            }, t = t+s);
+            setTimeout(function(){
+                $("img.top").css('opacity',1);
+            }, t = t+s);
+            setTimeout(function(){
+                imageSwitcher();
+            }, t = t+s-2500);
+        }
+        imageSwitcher();
     </script>
 </body>
 
