@@ -27,7 +27,7 @@
 
 #device-blocker {
 	background: #FFF;
-	height: 150px;
+	height: 100px;
 	z-index: 999;
 	position: absolute;
 	bottom: -100px;
@@ -82,10 +82,47 @@ header {
 }
 
 #healthcare {
-	background: -webkit-linear-gradient(to left, #43E4D5, #4BD2EB);
-	background: linear-gradient(to left, #43E4D5, #4BD2EB);
-	background-size: cover;
-	background-position: center center;
+	background: linear-gradient(253deg, #43e4d5, #4bd2eb, #27b6e7);
+	background-size: 600% 600%;
+	-webkit-animation: gradientAnim 30s ease infinite;
+	-moz-animation: gradientAnim 30s ease infinite;
+	animation: gradientAnim 30s ease infinite;
+}
+
+@-webkit-keyframes gradientAnim {
+	0% {
+		background-position: 0% 90%
+	}
+	50% {
+		background-position: 100% 11%
+	}
+	100% {
+		background-position: 0% 90%
+	}
+}
+
+@-moz-keyframes gradientAnim {
+	0% {
+		background-position: 0% 90%
+	}
+	50% {
+		background-position: 100% 11%
+	}
+	100% {
+		background-position: 0% 90%
+	}
+}
+
+@keyframes gradientAnim {
+	0% {
+		background-position: 0% 90%
+	}
+	50% {
+		background-position: 100% 11%
+	}
+	100% {
+		background-position: 0% 90%
+	}
 }
 
 section#healthcare.features .feature-item i {
