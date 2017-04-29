@@ -142,3 +142,7 @@ section#healthcare.features .feature-item i {
 section#contact a:hover {
 	text-decoration: none;
 }
+
+#mainNav.navbar.navbar-default.navbar-fixed-top.affix-top {
+	background: linear-gradient(to left, rgba(67, 228, 213, 0.7), rgba(75, 210, 235, 0));
+}
