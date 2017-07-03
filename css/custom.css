@@ -156,3 +156,103 @@ section#contact a:hover {
 li.social-email a {
   background-color: #1da1f2;
 }
+.chatcontainer {
+  position: fixed;
+  left: 10px;
+  bottom: 0;
+  height: 420px;
+  width: 320px;
+  z-index: 9999;
+  border-radius: 25px 25px 0 0;
+  border-top: 25px #0389d6 solid;
+  transition: all 0.5s ease-in-out;
+}
+.chatcontainer .fa {
+  position: relative;
+  top: -20px;
+  left: 15px;
+  color: #fff;
+}
+.chatcontainer .right {
+  pointer-events: none;
+  float: right;
+  color: #dc2430;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  width: 28px;
+  margin-left: auto;
+  top: -40px;
+  font-size: 28px;
+  transition: opacity .5s ease-in-out;
+  opacity: 0;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-name: pulse-right;
+  -webkit-animation-name: pulse-right;
+  -moz-animation-name: pulse-right;
+  animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+}
+.chatcontainer.min .right {
+  opacity: 1;
+}
+
+@keyframes pulse-right {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  2% {
+    transform: scale3d(1.2, 1.2, 1);
+  }
+  4% {
+    transform: scale3d(1, 1, 1);
+  }
+  6% {
+    transform: scale3d(1.2, 1.2, 1);
+  }
+  8% {
+    transform: scale3d(1, 1, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.chatcontainer i.right.fa span {
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+  left: -17px;
+  top: -3px;
+  font-family: 'Helvetica', 'Arial', 'sans-serif';
+}
+.chat-title {
+  color: #fff;
+  pointer-events: none;
+  font-size: 18px;
+  position: relative;
+  top: -43px;
+  font-family: 'Helvetica', 'Arial', 'sans-serif';
+  text-align: center;
+}
+iframe.chat {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.chatcontainer.max {
+  width: 500px;
+  height: 100%;
+}
+.chatcontainer.min {
+  bottom: -395px;
+}

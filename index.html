@@ -62,7 +62,13 @@
 </head>
 
 <body id="page-top">
-
+    <div class="chatcontainer min animated bounceInUp hide hidden-xs">
+        <i class="fa fa-window-minimize"></i>
+        <i class="fa fa-window-maximize"></i>
+        <div class="chat-title">Chatt</div>
+        <i class="fa fa-circle right" aria-hidden="true"><span>1</span></i>
+        <iframe class="chat" src="chat.html"></iframe>
+    </div>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -480,13 +486,50 @@
         imageSwitcher();
     </script>
     <script>
+
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-89676616-2', 'auto');
-  ga('send', 'pageview');
+  //ga('create', 'UA-89676616-2', 'auto');
+  //ga('send', 'pageview');
+
+  $(".chatcontainer .fa-window-maximize").click(function(){
+      $(".chatcontainer .right").remove();
+	if($(".chatcontainer").hasClass("min")) {
+$(".chatcontainer").removeClass("min");} else {
+$(".chatcontainer").toggleClass("max");
+}}
+);
+
+$(".chatcontainer .fa-window-minimize").click(function(){
+    $(".chatcontainer .right").remove();
+	$(".chatcontainer").toggleClass("min").removeClass("max");
+});
+
+function once(fn, context) {
+	var result;
+
+	return function() { 
+		if(fn) {
+			result = fn.apply(context || this, arguments);
+			fn = null;
+		}
+
+		return result;
+	};
+}
+
+var canOnlyFireOnce = once(function() {
+	$(".chatcontainer").removeClass("hide");
+});
+
+$(document).on('scroll', function() {
+    if($(this).scrollTop()>=$('#download').position().top){
+canOnlyFireOnce();
+}
+});
 
 </script>
 </body>
