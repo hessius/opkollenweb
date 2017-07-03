@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Required meta tags-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>Chatt</title>
+	<!-- Path to Framework7 iOS CSS theme styles-->
+	<link rel="stylesheet" href="lib/f7/css/framework7.ios.min.css">
+	<!-- Path to Framework7 iOS related color styles -->
+	<link rel="stylesheet" href="lib/f7/css/framework7.ios.colors.min.css">
+	<link rel="stylesheet" href="css/chat.css">
+</head>
+
+<body>
+	<div class="views">
+		<div class="view view-main">
+			<div class="pages navbar-through toolbar-through">
+				<div data-page="index" class="page">
+					<div class="toolbar messagebar messagebar-init">
+						<div class="toolbar-inner">
+							<textarea placeholder="Namn" onkeypress="return checkEnter(event)"></textarea>
+							<a href="#" class="link">Skicka</a>
+						</div>
+					</div>
+
+					<div class="page-content messages-content">
+						<div class="messages messages-init" data-auto-layout="true" data-new-messages-first="false">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="lib/f7/js/framework7.min.js"></script>
+	<script type="text/javascript" src="lib/velocity/velocity.min.js"></script>
+	<script type="text/javascript" src="lib/velocity/velocity.ui.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
+	<script type="text/javascript" src="lib/confetti/confetti.js"></script>
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script type="text/javascript" src="js/chat.js"></script>
+</body>
+
+</html>
