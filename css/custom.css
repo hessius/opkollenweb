@@ -256,17 +256,26 @@ iframe.chat {
 .chatcontainer.min {
   bottom: -395px;
 }
-
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 480px) {
   .chatcontainer {
-    height: calc(100% - 10px);
     width: calc(100% - 20px);
+    -moz-width: calc(100% - 20px);
+    -webkit-width: calc(100% - 20px);
   }
 
   .chatcontainer.max {
     width: calc(100% - 20px);
+    -moz-width: calc(100% - 20px);
+    -webkit-width: calc(100% - 20px);
   }
+}
 
+@media only screen and (max-width: 767px) {
+  .chatcontainer {
+    height: calc(100% - 10px);
+    -moz-height: calc(100% - 10px);
+    -webkit-height: calc(100% - 10px);
+  }
   .chatcontainer.min {
     height: 420px;
   }
