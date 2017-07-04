@@ -62,8 +62,9 @@
 </head>
 
 <body id="page-top">
-    <div class="chatcontainer min animated bounceInUp hide hidden-xs">
-        <i class="fa fa-window-minimize"></i>
+    <div class="chatcontainer min animated bounceInUp hide">
+        <i class="fa fa-times show-xs hidden-sm hidden-md hidden-lg hidden-xl"></i>
+        <i class="fa fa-window-minimize hidden-xs"></i>
         <i class="fa fa-window-maximize"></i>
         <div class="chat-title">Chatt</div>
         <i class="fa fa-circle right" aria-hidden="true"><span>1</span></i>
@@ -495,8 +496,8 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  //ga('create', 'UA-89676616-2', 'auto');
-  //ga('send', 'pageview');
+  ga('create', 'UA-89676616-2', 'auto');
+  ga('send', 'pageview');
 
   $(".chatcontainer .fa-window-maximize").click(function(){
       $(".chatcontainer .right").remove();
@@ -509,6 +510,11 @@ $(".chatcontainer").toggleClass("max");
 $(".chatcontainer .fa-window-minimize").click(function(){
     $(".chatcontainer .right").remove();
 	$(".chatcontainer").toggleClass("min").removeClass("max");
+});
+
+
+$(".chatcontainer .fa-times").click(function(){
+    $(".chatcontainer").remove();
 });
 
 function once(fn, context) {
