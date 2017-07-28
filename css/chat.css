@@ -1,0 +1,282 @@
+.messages {
+  padding-bottom: 24px;
+}
+
+.message {
+  margin-bottom: 2px;
+}
+
+.message-sent .message-text {
+  background-color: rgba(237, 158, 47, 1);
+  background: -webkit-linear-gradient(
+    top,
+    rgba(237, 158, 47, 1) 0%,
+    rgba(224, 166, 31, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(237, 158, 47, 1) 0%,
+    rgba(224, 166, 31, 1) 100%
+  );
+}
+
+.message-received .message-text {
+  background-color: #0389d6;
+  background: -webkit-linear-gradient(top, #0389d6 0%, #0382cb 100%);
+  background: linear-gradient(to bottom, #0389d6 0%, #0382cb 100%);
+  color: #fff;
+}
+
+.message-avatar {
+  width: 36px;
+  height: 36px;
+  margin-top: -36px;
+  top: 2px;
+}
+
+.received .message-avatar {
+  right: 7px;
+}
+
+.sent .message-avatar {
+  left: 7px;
+}
+
+.message .list-block,
+.message .row {
+  margin: 6px 0;
+}
+
+.message-text div {
+  margin-bottom: 0;
+}
+
+div.toolbar.messagebar.messagebar-init {
+  position: fixed;
+  /*bottom: 20px;*/
+  left: 0;
+}
+
+@-webkit-keyframes uil-ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0 0 0 0;
+  }
+  33% {
+    width: 44%;
+    height: 44%;
+    margin: -22% 0 0 -22%;
+    opacity: 1;
+  }
+  100% {
+    width: 88%;
+    height: 88%;
+    margin: -44% 0 0 -44%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes uil-ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0 0 0 0;
+  }
+  33% {
+    width: 44%;
+    height: 44%;
+    margin: -22% 0 0 -22%;
+    opacity: 1;
+  }
+  100% {
+    width: 88%;
+    height: 88%;
+    margin: -44% 0 0 -44%;
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes uil-ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0 0 0 0;
+  }
+  33% {
+    width: 44%;
+    height: 44%;
+    margin: -22% 0 0 -22%;
+    opacity: 1;
+  }
+  100% {
+    width: 88%;
+    height: 88%;
+    margin: -44% 0 0 -44%;
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes uil-ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0 0 0 0;
+  }
+  33% {
+    width: 44%;
+    height: 44%;
+    margin: -22% 0 0 -22%;
+    opacity: 1;
+  }
+  100% {
+    width: 88%;
+    height: 88%;
+    margin: -44% 0 0 -44%;
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes uil-ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0 0 0 0;
+  }
+  33% {
+    width: 44%;
+    height: 44%;
+    margin: -22% 0 0 -22%;
+    opacity: 1;
+  }
+  100% {
+    width: 88%;
+    height: 88%;
+    margin: -44% 0 0 -44%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes uil-ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0 0 0 0;
+  }
+  33% {
+    width: 44%;
+    height: 44%;
+    margin: -22% 0 0 -22%;
+    opacity: 1;
+  }
+  100% {
+    width: 88%;
+    height: 88%;
+    margin: -44% 0 0 -44%;
+    opacity: 0;
+  }
+}
+
+@-o-keyframes uil-ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0 0 0 0;
+  }
+  33% {
+    width: 44%;
+    height: 44%;
+    margin: -22% 0 0 -22%;
+    opacity: 1;
+  }
+  100% {
+    width: 88%;
+    height: 88%;
+    margin: -44% 0 0 -44%;
+    opacity: 0;
+  }
+}
+
+@keyframes uil-ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0 0 0 0;
+  }
+  33% {
+    width: 44%;
+    height: 44%;
+    margin: -22% 0 0 -22%;
+    opacity: 1;
+  }
+  100% {
+    width: 88%;
+    height: 88%;
+    margin: -44% 0 0 -44%;
+    opacity: 0;
+  }
+}
+
+.uil-ripple-css {
+  display: none;
+  background: none;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  left: 10px;
+}
+
+.uil-ripple-css div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  border-radius: 50%;
+  border-width: 12px;
+  border-style: solid;
+  -ms-animation: uil-ripple 1.5s ease-out infinite;
+  -moz-animation: uil-ripple 1.5s ease-out infinite;
+  -webkit-animation: uil-ripple 1.5s ease-out infinite;
+  -o-animation: uil-ripple 1.5s ease-out infinite;
+  animation: uil-ripple 1.5s ease-out infinite;
+}
+
+.uil-ripple-css div:nth-of-type(1) {
+  border-color: #afafb7;
+}
+
+.uil-ripple-css div:nth-of-type(2) {
+  border-color: #90c7e7;
+  -ms-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s;
+  -webkit-animation-delay: 0.75s;
+  -o-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+}
+
+.message .button.button-fill.color-white {
+  color: #0389d6;
+}
+
+canvas#confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+.messagebar {
+  display: none;
+}
