@@ -499,19 +499,25 @@
   ga('create', 'UA-89676616-2', 'auto');
   ga('send', 'pageview');
 
-  $(".chatcontainer .fa-window-maximize").click(function(){
-      $(".chatcontainer .right").remove();
+//Retain old max/min functionality but att so that title-click gives enlargement until max, then minimizes
+$(".chatcontainer").on("click", function(e){
+          $(".chatcontainer .right").remove();         
+    if($(e.target).is(".chatcontainer .fa-window-minimize")){
+	$(".chatcontainer").toggleClass("min").removeClass("max");}
+    else if($(e.target).is(".chatcontainer .fa-window-maximize")){
+        if($(".chatcontainer").hasClass("min")) {
+        $(".chatcontainer").removeClass("min");} else {
+        $(".chatcontainer").toggleClass("max");
+        }}
+else{
 	if($(".chatcontainer").hasClass("min")) {
-$(".chatcontainer").removeClass("min");} else {
-$(".chatcontainer").toggleClass("max");
-}}
-);
-
-$(".chatcontainer .fa-window-minimize").click(function(){
-    $(".chatcontainer .right").remove();
-	$(".chatcontainer").toggleClass("min").removeClass("max");
+$(".chatcontainer").removeClass("min");} 
+    else if($(".chatcontainer").hasClass("max")) {
+$(".chatcontainer").removeClass("max").toggleClass("min");} 
+    else
+{$(".chatcontainer").toggleClass("max");}
+}
 });
-
 
 $(".chatcontainer .fa-times").click(function(){
     $(".chatcontainer").remove();
