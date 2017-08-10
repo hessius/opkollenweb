@@ -499,19 +499,19 @@
   ga('create', 'UA-89676616-2', 'auto');
   ga('send', 'pageview');
 
-  $(".chatcontainer .fa-window-maximize").click(function(){
+  $(".chatcontainer .fa-window-maximize").click(function(e){
+    e.stopImmediatePropagation();
       $(".chatcontainer .right").remove();
-	if($(".chatcontainer").hasClass("min")) {
-$(".chatcontainer").removeClass("min");} else {
+      $(".chatcontainer").removeClass("min");
+	if(!$(".chatcontainer").hasClass("min")) 
 $(".chatcontainer").toggleClass("max");
-}}
+}
 );
 
-$(".chatcontainer .fa-window-minimize").click(function(){
+$(".chatcontainer").click(function(e){
     $(".chatcontainer .right").remove();
 	$(".chatcontainer").toggleClass("min").removeClass("max");
 });
-
 
 $(".chatcontainer .fa-times").click(function(){
     $(".chatcontainer").remove();
