@@ -77,15 +77,13 @@ img.five {
 
 header {
   background: url(../img/bg-pattern3.png), #4bd2eb;
-  background: url(../img/bg-pattern3.png),
-    -webkit-linear-gradient(to left, #43e4d5, #4bd2eb);
-  background: url(../img/bg-pattern3.png),
-    linear-gradient(to left, #43e4d5, #4bd2eb);
+  background: url(../img/bg-pattern3.png), -webkit-linear-gradient(to left, #43e4d5, #4bd2eb);
+  background: url(../img/bg-pattern3.png), linear-gradient(to left, #43e4d5, #4bd2eb);
 }
 
 #healthcare {
-  background: linear-gradient(253deg, #43e4d5, #4bd2eb, #27b6e7);
-  background-size: 600% 600%;
+  background: url(../img/duotone.png), linear-gradient(253deg, #43e4d5, #4bd2eb, #27b6e7);
+  background-size: 100% 100%, 600% 600%;
   -webkit-animation: gradientAnim 30s ease infinite;
   -moz-animation: gradientAnim 30s ease infinite;
   animation: gradientAnim 30s ease infinite;
@@ -141,21 +139,22 @@ section#healthcare.features .feature-item i {
   color: #fff !important;
 }
 
+section#download {
+  background: #FFF;
+}
+
 section#contact a:hover {
   text-decoration: none;
 }
 
 #mainNav.navbar.navbar-default.navbar-fixed-top.affix-top {
-  background: linear-gradient(
-    to left,
-    rgba(67, 228, 213, 0.7),
-    rgba(75, 210, 235, 0)
-  );
+  background: linear-gradient( to left, rgba(67, 228, 213, 0.7), rgba(75, 210, 235, 0));
 }
 
 li.social-email a {
   background-color: #1da1f2;
 }
+
 .chatcontainer {
   position: fixed;
   left: 10px;
@@ -167,12 +166,14 @@ li.social-email a {
   border-top: 25px #0389d6 solid;
   transition: all 0.5s ease-in-out;
 }
+
 .chatcontainer .fa {
   position: relative;
   top: -20px;
   left: 15px;
   color: #fff;
 }
+
 .chatcontainer .right {
   pointer-events: none;
   float: right;
@@ -181,6 +182,7 @@ li.social-email a {
   right: 0;
   text-align: right;
   width: 28px;
+  height: 28px;
   margin-left: auto;
   top: -40px;
   font-size: 28px;
@@ -199,6 +201,7 @@ li.social-email a {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
 }
+
 .chatcontainer.min .right {
   opacity: 1;
 }
@@ -232,6 +235,7 @@ li.social-email a {
   top: -3px;
   font-family: 'Helvetica', 'Arial', 'sans-serif';
 }
+
 .chat-title {
   color: #fff;
   pointer-events: none;
@@ -241,6 +245,7 @@ li.social-email a {
   font-family: 'Helvetica', 'Arial', 'sans-serif';
   text-align: center;
 }
+
 iframe.chat {
   height: 100%;
   width: 100%;
@@ -249,20 +254,22 @@ iframe.chat {
   left: 0;
   top: 0;
 }
+
 .chatcontainer.max {
   width: 500px;
   height: calc(100% - 10px);
 }
+
 .chatcontainer.min {
   bottom: -395px;
 }
+
 @media only screen and (max-width: 480px) {
   .chatcontainer {
     width: calc(100% - 20px);
     -moz-width: calc(100% - 20px);
     -webkit-width: calc(100% - 20px);
   }
-
   .chatcontainer.max {
     width: calc(100% - 20px);
     -moz-width: calc(100% - 20px);
