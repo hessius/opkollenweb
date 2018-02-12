@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Håll koll på din operation - Enklare än någonsin! Operationskollen hjälper dig att förstå och vara delaktig i din eller en anhörigs operation.">
     <meta name="author" content="Jesper Hessius">
-    <title>Operationskollen - Håll koll på din operation - Enklare än någonsin!</title>
+    <title>Operationskollen - Delaktiga patienter, kortare köer, bättre sjukvård.</title>
     <meta name="keywords" content="kirurgi,operation,ortopedi,patient,sjukvård,artros,smärta,träning,ehälsa">
     <!-- Facebook -->
     <meta property="og:site_name" content="Operationskollen">
@@ -43,6 +43,7 @@
     <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="lib/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="lib/device-mockups/device-mockups.min.css">
+    <link rel="stylesheet" href="lib/animatedheadline/jquery.animatedheadline.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 
@@ -93,10 +94,10 @@
                         <a class="page-scroll" href="#features">Vad gör Operationskollen?</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Ladda ned</a>
+                        <a class="page-scroll" href="#video">Video</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#video">Video</a>
+                        <a class="page-scroll" href="#download">Ladda ned</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Kontakta oss</a>
@@ -114,8 +115,14 @@
                 <div class="col-sm-7">
                     <div class="header-content">
                         <div class="header-content-inner">
-                            <h1>Operationskollen kan hjälpa din klinik att
-                                <span>korta köerna</span>
+                            <h1 class="ah-headline">
+                                <span>Operationskollen kan hjälpa din klinik</span>
+                                <span class="ah-words-wrapper">
+                                    <b class="is-visible">att korta köerna&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </b>
+                                    <b>till delaktiga patienter</b>
+                                    <b>att minska strykningar</b>
+                                    <b>att undvika felmedicinering</b>
+                                </span>
                             </h1>
                             <a href="mailto:jesper@operationskollen.se" class="btn btn-outline btn-xl page-scroll">Kontakta oss</a>
                             <a href="#healthcare" class="btn btn-outline btn-xl page-scroll">Läs mer</a>
@@ -441,6 +448,10 @@
 
     <!-- Sticky items -->
     <script src="https://cdn.rawgit.com/leafo/sticky-kit/v1.1.2/jquery.sticky-kit.min.js"></script>
+
+    <!-- Animated headlines -->
+    <script src="lib/animatedheadline/jquery.animatedheadline.min.js"></script>
+
     <script>
         $(document).ready(
             function () {
@@ -569,6 +580,39 @@
                 canOnlyFireOnce();
             }
         });
+
+        var animationDelay = 2500;
+
+        animateHeadline($('.cd-headline'));
+
+        function animateHeadline($headlines) {
+            $headlines.each(function () {
+                var headline = $(this);
+                //trigger animation
+                setTimeout(function () {
+                    hideWord(headline.find('.is-visible'))
+                }, animationDelay);
+                //other checks here ...
+            });
+
+            function hideWord($word) {
+                var nextWord = takeNext($word);
+                switchWord($word, nextWord);
+                setTimeout(function () {
+                    hideWord(nextWord)
+                }, animationDelay);
+            }
+
+            function takeNext($word) {
+                return (!$word.is(':last-child')) ? $word.next() : $word.parent().children().eq(0);
+            }
+
+            function switchWord($oldWord, $newWord) {
+                $oldWord.removeClass('is-visible').addClass('is-hidden');
+                $newWord.removeClass('is-hidden').addClass('is-visible');
+            }
+        }
+        $('.header-content').animatedHeadline();
     </script>
 </body>
 

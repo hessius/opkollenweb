@@ -3,6 +3,10 @@
   padding-right: 4px;
 }
 
+.btn-xl {
+  margin: 5px 0;
+}
+
 .device-col {
   margin-top: 100px !important;
 }
@@ -83,10 +87,7 @@ header {
 
 #healthcare {
   background: url(../img/duotone.png), linear-gradient(253deg, #43e4d5, #4bd2eb, #27b6e7);
-  background-size: 100% 100%, 600% 600%;
-  -webkit-animation: gradientAnim 30s ease infinite;
-  -moz-animation: gradientAnim 30s ease infinite;
-  animation: gradientAnim 30s ease infinite;
+  background-size: cover;
 }
 
 @-webkit-keyframes gradientAnim {
@@ -286,4 +287,20 @@ iframe.chat {
   .chatcontainer.min {
     height: 420px;
   }
+}
+
+
+/* TEXT ANIM */
+
+h1.ah-headline.rotate-1 {
+  text-align: left;
+}
+
+.ah-headline.rotate-1 b {
+  font-weight: normal !important;
+  font-style: normal;
+}
+
+span.ah-words-wrapper {
+  width: auto !important;
 }
