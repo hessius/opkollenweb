@@ -1,0 +1,21 @@
+Hur går det till?
+Er egen information! -Tillsammans med Operationskollen utformar ni på kliniken själva ert material.
+
+Både kliniker och patienter skiljer sig åt! - Ni styr själva hur Operationskollen ska fungera för just era patienter.
+
+Tillgängligt direkt! - Efter att materialet är godkänt lanseras det i appen på AppStore och Google Play och är redo att börja användas direkt!
+
+Integrera i kedjan! - Vi tar fram material som skickas ut med er kallelse vilket gör att patient och närstående kan börja använda appen redan innan de kommer till er.
+
+Intresserad av hur implementationsprocessen går till? Kontakta oss så berättar vi mer
+
+
+Vem kan använda Operationskollen?
+Operationskollen är till för att användas av både patienter och deras närstående. Genom att ha stöd för både iPad, iPhone och Android kan de allra flesta som har någon typ av smart telefon eller läsplatta ladda ned appen helt gratis!
+
+Genomsnittsålder för patienter skiljer sig stort mellan olika grupper - Appen är från grunden utformad för en äldre målgrupp än de flesta appar. Med detta i åtanke har appen en rad anpassningar för att underlätta för även den ovane användaren att kunna använda appen fullt ut.
+
+Teamet
+Jesper Hessius är legitimerad läkare och apputvecklare. Han har tidigare gjort en rad uppmärksammade appar som Pillerkollen, Labblistan och Klinikkurt. Han sitter även i styrelsen för Apotekarsocietetens sektion för läkemedelsinformation och driver där poddcasten Läkemedelspodden som belyser aktuella ämnen inom läkemedelsområdet. Jesper brinner för hälso- och sjuwkvårdsutveckling och tror att förbättrade IT-lösningar är en vital och nödvändig del av morgondagens sjukvård!
+
+Kerem Aktas har en bakgrund inom försäljning och konfiguration av verksamhetsintegrerade IT-system och är välrenommerad expert inom produkt- och portfoliohantering. Som patient och närstående har Kerem själv sett hur dagens sjukvård kan producera vård i världsklass samtidigt som man dras med stora ineffektiviteter och har stora utmaningar med att informera och engagera patienter och deras närstående.

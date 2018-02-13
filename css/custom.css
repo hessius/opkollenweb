@@ -289,7 +289,6 @@ iframe.chat {
   }
 }
 
-
 /* TEXT ANIM */
 
 h1.ah-headline.rotate-1 {
@@ -303,4 +302,5 @@ h1.ah-headline.rotate-1 {
 
 span.ah-words-wrapper {
   width: auto !important;
+  pointer-events: none;
 }
