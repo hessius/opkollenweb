@@ -146,8 +146,8 @@ section.bg-white {
 }
 
 section.bg-secondary {
-  background-color: #7b4397;
-  background-image: linear-gradient(147deg, #7b4397 0%, #dc2430 100%);
+  background-color: #66a6ff;
+  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
   position: relative;
   color: #fff;
   background-size: 600% 600%;
