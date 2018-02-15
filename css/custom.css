@@ -140,7 +140,7 @@ section#healthcare.features .feature-item i {
   color: #fff !important;
 }
 
-section#features.features .feature-item {
+section#features.features .feature-item a {
   background: linear-gradient(to left, #7b4397, #dc2430);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
