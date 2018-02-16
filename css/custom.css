@@ -141,10 +141,18 @@ section#healthcare.features .feature-item i {
 }
 
 section#features.features .feature-item a {
-  background: linear-gradient(to left, #7b4397, #dc2430);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  border: 3px solid #7b4397;
+  color: #66a6ff;
+  border: 3px solid #66a6ff;
+  border-image-slice: 1;
+}
+
+section#features.features .feature-item a:hover {
+  background: #66a6ff;
+  color: #fff;
+}
+
+section.features .feature-item i {
+  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
 }
 
 section.bg-white {
@@ -322,4 +330,46 @@ h1.ah-headline.rotate-1 {
 span.ah-words-wrapper {
   width: auto !important;
   pointer-events: none;
+}
+
+#team p.text-muted b {
+  color: #fff;
+}
+
+#team p.text-muted {
+  text-align: justify;
+}
+
+.avatar-container {
+  width: 200px;
+  height: 200px;
+  border: 6px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 25px auto;
+  animation: float 6s ease-in-out infinite;
+}
+
+.avatar-container.first-avatar {
+  animation-delay: 3s;
+}
+
+img.avatar {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 17px 15px 0px rgba(0, 0, 0, 0.1);
+    transform: translatey(-12px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(0px);
+  }
 }
