@@ -179,8 +179,20 @@ section#contact a:hover {
   background: linear-gradient( to left, rgba(67, 228, 213, 0.7), rgba(75, 210, 235, 0));
 }
 
-li.social-email a {
-  background-color: #1da1f2;
+li.social-email a,
+li.social-phone a,
+.callbtn {
+  background-color: #48e843;
+}
+
+li.social-email a:hover,
+li.social-phone a:hover,
+.callbtn {
+  background-color: #54f25f;
+}
+
+#telephoneModal .modal-title {
+  text-align: center;
 }
 
 .chatcontainer {

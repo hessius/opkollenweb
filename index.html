@@ -532,7 +532,7 @@
                             <img src="img/google-play-badge.svg" alt="">
                         </a>
                         <a class="badge-link" href="https://itunes.apple.com/app/id1189323542?mt=8">
-                            <img src="img/app-store-badge.svg" alt="">
+                            <i src="img/app-store-badge.svg" alt="">
                         </a>
                     </div>
                 </div>
@@ -551,22 +551,50 @@
                     </a>
                 </li>
                 <li class="social-facebook">
-                    <a href="https://www.facebook.com/operationskollen" i class="fa fa-facebook">
-                        </img>
+                    <a href="https://www.facebook.com/operationskollen">
+                        <i class="fa fa-facebook">
+                        </i>
                     </a>
                 </li>
                 <li class="social-twitter">
-                    <a href="https://www.twitter.com/hessius" i class="fa fa-twitter">
+                    <a href="https://www.twitter.com/hessius">
+                        <i class="fa fa-twitter">
+                        </i>
+                    </a>
+                </li>
+                <li class="social-phone">
+                    <a data-toggle="modal" data-target="#telephoneModal">
+                        <i class="fa fa-phone">
                         </i>
                     </a>
                 </li>
             </ul>
+
+            <!-- Modal -->
             <br>
             <a href="mailto:info@operationskollen.se" class="btn btn-outline btn-xl page-scroll">Kontakta oss</a>
             <a href="http://eepurl.com/dkJdIj" class="btn btn-outline btn-xl page-scroll" onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=755, height=755'); return false;">Bli kontaktad</a>
         </div>
     </section>
 
+    <div class="modal fade" id="telephoneModal" tabindex="1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Stäng">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Ring oss på 070 - 772 07 95
+                        <a href="tel:+467077270795">
+                            <button type="button" class="btn btn-success">
+                                Ring
+                            </button>
+                        </a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="container">
             <p>&copy; 2017 Operationskollen</p>
