@@ -563,7 +563,7 @@
                     </a>
                 </li>
                 <li class="social-phone">
-                    <a data-toggle="modal" data-target="#telephoneModal">
+                    <a href="javascript:callPhone()">
                         <i class="fa fa-phone">
                         </i>
                     </a>
@@ -702,6 +702,14 @@
             }, t = t + s - 2500);
         }
         imageSwitcher();
+
+        function callPhone() {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                location.href = "tel://0707720795"
+            } else {
+                $('#telephoneModal').modal("show")
+            }
+        }
     </script>
     <script>
         (function (i, s, o, g, r, a, m) {
