@@ -80,13 +80,13 @@ img.five {
 }
 
 header {
-  background: url(../img/bg-pattern3.png), #4bd2eb;
-  background: url(../img/bg-pattern3.png), -webkit-linear-gradient(to left, #43e4d5, #4bd2eb);
-  background: url(../img/bg-pattern3.png), linear-gradient(to left, #43e4d5, #4bd2eb);
+  background: url(../img/bg-pattern3-crunch.png), #4bd2eb;
+  background: url(../img/bg-pattern3-crunch.png), -webkit-linear-gradient(to left, #43e4d5, #4bd2eb);
+  background: url(../img/bg-pattern3-crunch.png), linear-gradient(to left, #43e4d5, #4bd2eb);
 }
 
 #healthcare {
-  background: url(../img/duotone.png), linear-gradient(253deg, #43e4d5, #4bd2eb, #27b6e7);
+  background: url(../img/duotone-crunch.png), linear-gradient(253deg, #43e4d5, #4bd2eb, #27b6e7);
   background-size: cover;
 }
 
@@ -170,6 +170,22 @@ section.bg-secondary {
   -moz-animation: gradientAnim 30s ease infinite;
   animation: gradientAnim 30s ease infinite;
 }
+
+section#awards.features .feature-item a {
+  color: #fdcc52;
+  border: none;
+  border-image-slice: 1;
+}
+
+section#awards h2 {
+  color: #fdcc52;
+}
+
+.award-img {
+max-height:80px;
+}
+.award-img.vitalis {
+  }
 
 section#contact a:hover {
   text-decoration: none;
@@ -389,3 +405,14 @@ img.avatar {
     transform: translatey(0px);
   }
 }
+
+/* KLARO */
+#klaro {
+  position: relative;
+  z-index: 99999;
+}
+@media (min-width: 990px){
+.klaro .cookie-notice {
+right: auto;
+left: 20px;
+}}
