@@ -189,15 +189,14 @@ max-height:80px;
 
   .gold {
     color:	#D5AD6D; /*if no support for background-clip*/
-    font-weight:500;
     background: -webkit-linear-gradient(transparent, transparent),
                -webkit-linear-gradient(135deg, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
     background: -o-linear-gradient(transparent, transparent);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-size:200%;
+    background-size:600%;
       -webkit-animation-name: MOVE-BG;
-      -webkit-animation-duration: 10s;
+      -webkit-animation-duration: 60s;
       -webkit-animation-timing-function: linear;
       -webkit-animation-iteration-count: infinite;
   }
@@ -207,7 +206,7 @@ max-height:80px;
           background-position: 0% 0%
       }
       to {
-          background-position: 200% 200%
+          background-position: 800% 800%
       }
   }
   
