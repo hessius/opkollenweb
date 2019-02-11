@@ -1031,12 +1031,12 @@
 
                 if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i) || userAgent.match(/iPod/i) || userAgent.match(/Mac/i)) {
                     document.getElementsByTagName('body')[0].className += ' ios';
-                    return 'sms:71120/&body=guldst%C3%A4nk%2010';
+                    return 'sms:71120&body=guldst%C3%A4nk%2010';
                 }
 
                 else if (userAgent.match(/Android/i)) {
                     document.getElementsByTagName('body')[0].className += ' android';
-                    return 'sms:71120/?body=guldst%C3%A4nk%2010';
+                    return 'sms:71120?body=guldst%C3%A4nk%2010';
                 }
 
                 else { return 'https://guldstank.se/aretsinnovator/'; }
