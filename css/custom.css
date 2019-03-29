@@ -11,7 +11,18 @@
 .device-col {
   margin-top: 100px !important;
 }
-
+.row-centered {
+  text-align:center;
+}
+.col-centered {
+  display:inline-block;
+  float:none;
+  /* reset the text-align */
+  text-align:left;
+  /* inline-block space fix */
+  margin-right:-4px;
+  vertical-align:top;
+}
 .device-container {
   margin-top: -38px !important;
   transition: all 0.1s ease-in-out;
@@ -180,6 +191,12 @@ section#awards.features .feature-item a {
 
 section#awards h2 {
   color: #fdcc52;
+}
+
+section.bg-primary {
+  background: #ffc228;
+background: -webkit-linear-gradient(#ffc228,#d6a21f);
+background: linear-gradient(#ffc228,#d6a21f);
 }
 
 .award-img {
@@ -407,11 +424,21 @@ span.ah-words-wrapper {
   border-radius: 50%;
   overflow: hidden;
   margin: 25px auto;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.3);
   animation: float 6s ease-in-out infinite;
 }
 
 .avatar-container.first-avatar {
-  animation-delay: 3s;
+  animation-delay: 1.5s;
+}
+
+
+.avatar-container.second-avatar {
+  animation-delay: 0s;
+}
+
+.avatar-container.third-avatar {
+  animation-delay: 4.5s;
 }
 
 img.avatar {

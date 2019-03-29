@@ -580,6 +580,36 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <a href="https://www.facebook.com/guldstank/posts/2203126729709843" target="_blank">
+                                        <img class="award-img vitalis" src="img/guldstank-crunch.png" />
+                                        <h3>
+                                            Guldstänk
+                                        </h3>
+                                    </a>
+                                    <p class="text-muted">
+                                        Årets Innovatör utses av Almi Mälardalen.
+                                        Priset delas ut till en innovativ person, team eller företag som på ett
+                                        föredömligt sätt arbetat fram en tjänst eller produkt som i något avseende är
+                                        helt ny för marknaden. Operationskollen var 2018 en av tre finalister till
+                                        priset.
+                                        <br>
+                                        <br>"Genom att sätta individen i fokus och skapa trygghet för patienten och dess
+                                        närstående har man genom ny teknik skapat användarvänlighet och helhetsbild
+                                        genom hela flödet samt ett personligt bemötande. Företagets lösning
+                                        effektiviserar och frigör användandet av spetskompetens vilket ger stora
+                                        kostnadsbesparingar för samhället."
+                                        <br>
+                                        <a href="https://www.facebook.com/guldstank/posts/2203126729709843"
+                                            target="_blank">Läs mer</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -688,8 +718,8 @@
                     <p>Operationskollen kommer från golvet. Säg hej till teamet.</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-1">
+            <div class="row row-centered">
+                <div class="col-xs-8 col-xs-offset-2 col-md-3 col-md-offset-0 col-centered">
                     <div class="avatar-container first-avatar">
                         <img class="avatar" src="img/avatar.jesper.jpg">
                     </div>
@@ -709,7 +739,7 @@
                     <br>
                     <br>
                 </div>
-                <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-2">
+                <div class="col-xs-8 col-xs-offset-2 col-md-3 col-md-offset-1 col-centered">
                     <div class="avatar-container second-avatar">
                         <img class="avatar" src="img/avatar.kerem.jpg">
                     </div>
@@ -723,6 +753,25 @@
                     <p class="text-muted">Samtidigt dras man med stora ineffektiviteter och har stora utmaningar med
                         att informera och engagera
                         patienter och deras närstående.
+                    </p>
+                </div>
+                <div class="col-xs-12 show-xs hidden-sm hidden-md hidden-lg hidden-xl">
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 col-md-3 col-md-offset-1 col-centered">
+                    <div class="avatar-container third-avatar">
+                        <img class="avatar" src="img/avatar.christopher.jpg">
+                    </div>
+                    <p class="text-muted">
+                        <b>Christopher af Bjur</b> är en agil javascriptuptvecklare med erfarenhet från annonsbranschen
+                        med fokus på
+                        <b>skalbara javascriptlösningar</b> och användarförståelse.</p>
+                    <p class="text-muted">Från sina erfarenheter i sjukvården har Christopher själv upplevt hur
+                        <b>svårt</b> det kan vara att vara patient.</p>
+                    <p class="text-muted">Det vill Christopher vara med att ändra på - För att se till att alla som
+                        möter sjukvården, gör det med samma goda verktyg för att vara aktiva och delaktiga!
                     </p>
                 </div>
             </div>
@@ -1017,32 +1066,6 @@
         $('#who').animatedHeadline({
             animationType: "type"
         });
-    </script>
-    <script>
-        window.sms = () => {
-            let getLink = () => {
-                let userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-                if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i) || userAgent.match(/iPod/i) || userAgent.match(/Mac/i)) {
-                    document.getElementsByTagName('body')[0].className += ' ios';
-                    return 'sms:71120&body=guldst%C3%A4nk%2010';
-                }
-
-                else if (userAgent.match(/Android/i)) {
-                    document.getElementsByTagName('body')[0].className += ' android';
-                    return 'sms:71120?body=guldst%C3%A4nk%2010';
-                }
-
-                else { return 'https://guldstank.se/aretsinnovator/'; }
-            }
-            let el = document.getElementById('gs');
-            let link = getLink();
-            //document.getElementById("device").innerHTML = deviceType;
-            console.log(el)
-            console.log(link)
-            el.href = link
-        }
-        sms()
     </script>
 </body>
 
