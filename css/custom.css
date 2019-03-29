@@ -24,7 +24,7 @@
   vertical-align:top;
 }
 .device-container {
-  margin-top: -38px !important;
+  margin-top: -40px !important;
   transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
 }
@@ -471,3 +471,62 @@ img.avatar {
 right: auto;
 left: 20px;
 }}
+
+/* NEW FADE TOP ANIM */
+header .device-mockup {
+  top:200px
+}
+
+header .device {
+  background:none !important;
+  background-image:none !important;
+}
+
+header .device .screen {
+  top: 0 !important;
+}
+
+.device .screen img {
+animation: deviceFader 50s ease-in-out infinite;
+margin:auto;
+}
+
+.device .screen img.one {
+  animation-delay: 0s
+}
+
+.device .screen img.two {
+  animation-delay: 10s
+}
+
+.device .screen img.three {
+  animation-delay: 20s
+}
+
+.device .screen img.four {
+  animation-delay: 30s
+}
+
+.device .screen img.five {
+  animation-delay: 40s
+}
+
+
+
+@keyframes deviceFader {
+  0% {
+    opacity:0;
+  }
+  1% {
+    opacity:1;
+  }
+  25% {
+    opacity:1;
+  }
+  26% {
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
+}
