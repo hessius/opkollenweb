@@ -477,12 +477,12 @@ header .device-mockup {
   top:200px
 }
 
-header .device {
+.device {
   background:none !important;
   background-image:none !important;
 }
 
-header .device .screen {
+.device .screen {
   top: 0 !important;
 }
 
