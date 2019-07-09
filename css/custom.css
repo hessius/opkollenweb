@@ -8,6 +8,22 @@
   margin: 5px 0;
 }
 
+.btn-tooltip {
+  margin-left: -20px;
+  position: relative;
+  left: 20px;
+  bottom: 2px;
+width: 20px;
+padding: 0 0 0 2px;
+text-align: center;
+opacity: 0.5;
+}
+
+.no-border {
+  border:none;
+}
+
+
 .device-col {
   margin-top: 100px !important;
 }
@@ -138,6 +154,10 @@ header {
   }
 }
 
+section#video {
+  background:rgba(249,249,249,1)
+}
+
 section#healthcare.features .feature-item i {
   font-size: 80px;
   background: none;
@@ -160,6 +180,88 @@ section#features.features .feature-item a {
 
 section#features.features .feature-item a:hover {
   background: #66a6ff;
+  color: #fff;
+}
+
+section#value {
+  border-top-width: 1px;
+  border-color:red;
+}
+section#testimonials {
+  /* padding: 50px 0 0 0; */
+}
+
+section#testimonials.bg-primary::after {
+      content: " ";
+      display:block;
+      position: relative;
+      bottom:-20px;
+      left:0px;
+      width:100%;
+      height:72px;
+      background: linear-gradient(#fff 0%, transparent 0%), linear-gradient(315deg, #d6a21f 33.33%, transparent 33.33%) 0 0%, #d6a21f linear-gradient(225deg, #d6a21f 33.33%, #fff 33.33%) 0 0%;
+      background: -webkit-linear-gradient(#fff 0%, transparent 0%), -webkit-linear-gradient(315deg, #d6a21f 33.33%, transparent 33.33%) 0 0%, #d6a21f -webkit-linear-gradient(225deg, #d6a21f 33.33%, #fff 33.33%) 0 0%;
+      background: -o-linear-gradient(#fff 0%, transparent 0%), -o-linear-gradient(315deg, #d6a21f 33.33%, transparent 33.33%) 0 0%, #d6a21f -o-linear-gradient(225deg, #d6a21f 33.33%, #fff 33.33%) 0 0%;
+      background: -moz-linear-gradient(#fff 0%, transparent 0%), -moz-linear-gradient(315deg, #d6a21f 33.33%, transparent 33.33%) 0 0%, #d6a21f -moz-linear-gradient(225deg, #d6a21f 33.33%, #fff 33.33%) 0 0%;
+      background-repeat: repeat-x;
+      background-size: 0px 100%, 18px 54px, 18px 54px;
+      }
+     
+section#testimonials.bg-primary:before {
+        content: " ";
+        display:block;
+        position: relative;
+        top:-100px;
+        left:0px;
+        width:100%;
+        height:72px;
+        background: linear-gradient(#fff 0%, transparent 0%), linear-gradient(135deg, #ffc228 33.33%, transparent 33.33%) 0 0%, #ffc228 linear-gradient(45deg, #ffc228 33.33%, #fff 33.33%) 0 0%;
+        background: -webkit-linear-gradient(#fff 0%, transparent 0%), -webkit-linear-gradient(135deg, #ffc228 33.33%, transparent 33.33%) 0 0%, #ffc228 -webkit-linear-gradient(45deg, #ffc228 33.33%, #fff 33.33%) 0 0%;
+        background: -o-linear-gradient(#fff 0%, transparent 0%), -o-linear-gradient(135deg, #ffc228 33.33%, transparent 33.33%) 0 0%, #ffc228 -o-linear-gradient(45deg, #ffc228 33.33%, #fff 33.33%) 0 0%;
+        background: -moz-linear-gradient(#fff 0%, transparent 0%), -moz-linear-gradient(135deg, #ffc228 33.33%, transparent 33.33%) 0 0%, #ffc228 -moz-linear-gradient(45deg, #ffc228 33.33%, #fff 33.33%) 0 0%;
+        background-repeat: repeat-x;
+        background-size: 0px 100%, 18px 54px, 18px 54px;
+        }
+
+
+#testimonials .feature-item h2 {
+  font-size:50px
+}
+
+#testimonials .feature-item .text-muted {
+  color:#f7f7f7
+}
+
+section#value .section-heading hr {
+  max-width: 50%;
+}
+
+section#value .feature-item {
+  margin-top:14px;
+}
+
+section#value .feature-item i {
+  font-size: 30px;
+}
+
+section#value .feature-item p {
+  margin-bottom: 0px;
+}
+
+section#value .feature-item p.text-muted {
+  font-size: 16px;
+}
+
+section#value .feature-item hr {
+  margin: 15px auto 0;
+}
+
+section#value .btn-outline {
+  color: #fdcc52;
+  border: 3px solid #fdcc52;
+  border-image-slice: 1;
+}
+section#value .btn-outline:hover {
   color: #fff;
 }
 
@@ -193,10 +295,25 @@ section#awards h2 {
   color: #fdcc52;
 }
 
+h3 span.lquote, h3 span.rquote, h2 span.lquote, h2 span.rquote {
+    font-size: 120px;
+    line-height: 0;
+    opacity: 0.5;
+    position: absolute;
+}
+h3 span.lquote, h2 span.lquote {
+  top: 50px;
+  left: 0;
+  }
+h3 span.rquote, h2 span.rquote {
+bottom: 130px;
+right: 0;
+}
 section.bg-primary {
   background: #ffc228;
 background: -webkit-linear-gradient(#ffc228,#d6a21f);
 background: linear-gradient(#ffc228,#d6a21f);
+position: relative;
 }
 
 .award-img {
