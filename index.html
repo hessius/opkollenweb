@@ -47,6 +47,7 @@
     <link rel="stylesheet" href="lib/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="lib/device-mockups/device-mockups.min.css">
     <link rel="stylesheet" href="lib/animatedheadline/jquery.animatedheadline.css">
+    <link rel="stylesheet" href="lib/bootstrap-slider/css/bootstrap-slider.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 
@@ -63,6 +64,10 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
+    <!-- Animated Icons -->
+    <script src="https://cdn.rawgit.com/icons8/titanic/master/dist/js/titanic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.5.9/bodymovin.min.js"></script>
 </head>
 
 <body id="page-top">
@@ -74,7 +79,7 @@
         <i class="fa fa-circle right" aria-hidden="true">
             <span>1</span>
         </i>
-        <iframe class="chat" src="chat.html"></iframe>
+        <!-- <iframe class="chat" src="chat.html"></iframe> -->
     </div>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -98,7 +103,7 @@
                         <a class="page-scroll" href="#features">Funktioner</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#who">För vem?</a>
+                        <a class="page-scroll" href="#value">Räkna på värdet</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#procedure">Hur går det till?</a>
@@ -204,6 +209,127 @@
                         frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
+        </div>
+    </section>
+    <section id="features" class="features">
+        <div class="container" style="position:relative">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h2>Vad gör Operationskollen?</h2>
+                        <p class="text">Allt börjar med ett
+                            <b>Hej!</b>
+                        </p>
+                        <p class="text-muted">Operationskollen är en tjänst för vårdgivare klinik där patienten får ett
+                            individualiserat verktyg som följer patienten hela vägen - Inför, kring och efter sin
+                            operation
+                        </p>
+                        <p class="text-muted">Här nedan visar vi ett litet urval av vad Operationskollen kan göra för
+                            dina patienter</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 device-col">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <div class="screen">
+                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                    <img src="img/slides/crop/1-crunch.png" class="img-responsive one" alt="">
+                                    <img src="img/slides/crop/2-crunch.png" class="img-responsive two" alt="">
+                                    <img src="img/slides/crop/3-crunch.png" class="img-responsive three" alt="">
+                                    <img src="img/slides/crop/4-crunch.png" class="img-responsive four" alt="">
+                                    <img src="img/slides/crop/6-crunch.png" class="img-responsive five" alt="">
+                                </div>
+                                <div class="button">
+                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-organization text-primary"></i>
+                                    <h3>Praktiskt</h3>
+                                    <p class="text-muted">Oavsett om det gäller smärtlindring efter operationen eller
+                                        duschning inför kan du vara
+                                        lugn, Operationskollen hjälper dig!</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-emotsmile text-primary"></i>
+                                    <h3>Personligt</h3>
+                                    <p class="text-muted">Appen sållar åt dig - börja med att chatta med vår bot, appen
+                                        anpassas automagiskt efter
+                                        dina förutsättningar!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-energy text-primary"></i>
+                                    <h3>Träning</h3>
+                                    <p class="text-muted">För ett bra operationsresultat krävs träning -
+                                        Operationskollen visar hur och peppar
+                                        dig genom din rehabilitering!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-question text-primary"></i>
+                                    <h3>Men tänk om...</h3>
+                                    <p class="text-muted">Frågor? Appen hjälper dig till svaren eller sätter dig i
+                                        kontakt med din operationsklinik!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-calendar text-primary"></i>
+                                    <h3>Direkt i kalendern!</h3>
+                                    <p class="text-muted">Oroa dig inte över att ha ännu en app att använda för att
+                                        hålla reda på saker - Operationskollen
+                                        integrerar direkt med din vanliga kalender, använd vilken app du vill!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-present text-primary"></i>
+                                    <h3>Helt gratis</h3>
+                                    <p class="text-muted">Vilken hjälp du får kring din operation ska inte avgöras av
+                                        storleken på din plånbok.
+                                        Operationskollen är, och kommer alltid att vara, gratis för dig som patient och
+                                        anhörig.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="feature-item" style="margin-bottom:0">
+                                <h3>Och mycket mer...</h3>
+                                <p class="text-muted">Intresserad? Kontakta oss så ser vi hur Operationskollen kan
+                                    passa för just er</p>
+                                <a href="#contact" class="btn btn-outline btn-xl page-scroll">Kontakta oss</a>
+                                <a href="http://eepurl.com/dkJdIj" class="btn btn-outline btn-xl page-scroll"
+                                    onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=755, height=755'); return false;">Bli
+                                    kontaktad</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="device-blocker"></div>
         </div>
     </section>
     <section id="healthcare" class="features">
@@ -317,316 +443,131 @@
             </div>
         </div>
     </section>
-    <section id="features" class="features">
-        <div class="container" style="position:relative">
+    <section id="value" class="value bg-white text-center">
+
+        <div class="section-heading">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-heading">
-                        <h2>Vad gör Operationskollen?</h2>
-                        <p class="text">Allt börjar med ett
-                            <b>Hej!</b>
-                        </p>
-                        <p class="text-muted">Appen följer patienten hela vägen - Inför, kring och efter din operation
-                        </p>
-                        <p class="text-muted">Här nedan visar vi ett litet urval av vad Operationskollen kan göra för
-                            dina patienter</p>
-                        <hr>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 device-col">
-                    <div class="device-container">
-                        <div class="device-mockup iphone6_plus portrait white">
-                            <div class="device">
-                                <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/slides/crop/1-crunch.png" class="img-responsive one" alt="">
-                                    <img src="img/slides/crop/2-crunch.png" class="img-responsive two" alt="">
-                                    <img src="img/slides/crop/3-crunch.png" class="img-responsive three" alt="">
-                                    <img src="img/slides/crop/4-crunch.png" class="img-responsive four" alt="">
-                                    <img src="img/slides/crop/6-crunch.png" class="img-responsive five" alt="">
-                                </div>
-                                <div class="button">
-                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-organization text-primary"></i>
-                                    <h3>Praktiskt</h3>
-                                    <p class="text-muted">Oavsett om det gäller smärtlindring efter operationen eller
-                                        duschning inför kan du vara
-                                        lugn, Operationskollen hjälper dig!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-emotsmile text-primary"></i>
-                                    <h3>Personligt</h3>
-                                    <p class="text-muted">Appen sållar åt dig - börja med att chatta med vår bot, appen
-                                        anpassas automagiskt efter
-                                        dina förutsättningar!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-energy text-primary"></i>
-                                    <h3>Träning</h3>
-                                    <p class="text-muted">För ett bra operationsresultat krävs träning -
-                                        Operationskollen visar hur och peppar
-                                        dig genom din rehabilitering!
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-question text-primary"></i>
-                                    <h3>Men tänk om...</h3>
-                                    <p class="text-muted">Frågor? Appen hjälper dig till svaren eller sätter dig i
-                                        kontakt med din operationsklinik!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-calendar text-primary"></i>
-                                    <h3>Direkt i kalendern!</h3>
-                                    <p class="text-muted">Oroa dig inte över att ha ännu en app att använda för att
-                                        hålla reda på saker - Operationskollen
-                                        integrerar direkt med din vanliga kalender, använd vilken app du vill!
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-present text-primary"></i>
-                                    <h3>Helt gratis</h3>
-                                    <p class="text-muted">Vilken hjälp du får kring din operation ska inte avgöras av
-                                        storleken på din plånbok.
-                                        Operationskollen är, och kommer alltid att vara, gratis för dig som patient och
-                                        anhörig.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="feature-item" style="margin-bottom:0">
-                                <h3>Och mycket mer...</h3>
-                                <p class="text-muted">Intresserad? Kontakta oss så ser vi hur Operationskollen kan
-                                    passa för just er</p>
-                                <a href="#contact" class="btn btn-outline btn-xl page-scroll">Kontakta oss</a>
-                                <a href="http://eepurl.com/dkJdIj" class="btn btn-outline btn-xl page-scroll"
-                                    onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=755, height=755'); return false;">Bli
-                                    kontaktad</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row" id="device-blocker"></div>
-        </div>
-    </section>
-    <section id="who" class="download bg-primary text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <h2 class="section-heading">För vem?</h2>
-                    <p class="text ah-headline">
-                        <span>Anpassad efter din</span>
-                        <span class="ah-words-wrapper">
-                            <b class="is-visible">mamma</b>
-                            <b>patient</b>
-                            <b>bror</b>
-                            <b>patient</b>
-                            <b>syster</b>
-                            <b>patient</b>
-                            <b>pappa</b>
-                            <b>patient</b>
-                        </span>
-                    </p>
-                    <img src="img/queue.svg" width="75%" />
+                <div class="col-xs-8 col-xs-push-2">
+                    <h2>Värdefullt?</h2>
+                    <p class="text text-muted">Operationskollen hjälper sjukvården att arbeta smartare och mer
+                        effektivt.</p>
+                    <p class="text text-muted">Utifrån våra kunderfarenheter har vi tagit fram en modell där man utifrån
+                        klinikens
+                        nuläge
+                        kan se vilka resurser som skulle kunna frigöras med Operationskollens hjälp.</p>
                     <p class="text">
-                        Operationskollen är till för att användas av både patienter och deras närstående.</p>
-                    <p class="text">Genomsnittsålder för patienter skiljer sig stort mellan olika grupper -
-                        <u>Appen är från grunden designad för en äldre målgrupp</u> än de flesta appar för att bättre
-                        möta dina
-                        patienters behov.
+                        Här kan du själv räkna på hur Operationskollen skulle kunna hjälpa just <b>din
+                            klinik!</b>
                     </p>
-                    <p class="text">
-                        <u>Design</u> är nämligen inte bara hur någonting ser ut, det är också hur det fungerar -
-                        Operationskollen
-                        är
-                        <u>designad</u> från grunden för att just din patient och dennes närstående ska ha så bra
-                        förutsättningar
-                        som möjligt för att kunna tillgodogöra sig din information.
-                    </p>
+                    <hr>
                 </div>
             </div>
         </div>
-    </section>
-    <section id="awards" class="download text-center bg-white features">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="section-heading">
-                        <h2 class="gold">Utmärkelser</h2>
-                        <p class="text">Operationskollens innovativa lösningar på dagens och morgondagens utmaningar i
-                            hälso- och sjukvården
-                            har uppmärksammats av flera olika aktörer.
-                            <br> Här kan du läsa mer om ett axplock.</p>
+                <div class="col-xs-8 col-xs-push-2 col-md-push-0 col-md-3">
+                    <h3>Hur ser det ut idag?<button type="button" class="btn btn-default btn-xs btn-tooltip"
+                            data-toggle="tooltip" data-placement="top"
+                            title="Ange hur situationen ser ut på just din klinik, förifyllt är situationen för en mellanstor klinik">?</button>
+                    </h3>
+                    <hr>
+                    <div class="list-group no-border">
+                        <form id="valueForm">
+                            <div class="list-group-item no-border">
+                                <h4 class="list-group-item-heading">Antal operationer per vecka <button type="button"
+                                        class="btn btn-default btn-xs btn-tooltip" data-toggle="tooltip"
+                                        data-placement="top"
+                                        title="Antal operationer, här förutsätts 40 veckor med elektiv opererande verksamhet per år och operationkostnad 30 000 kr per operation.">?</button>
+                                </h4>
+                                <div class="input-group input-group-lg">
+                                    <input id="ppw" type="number" class="form-control" placeholder="35" value="35">
+                                    <span class="input-group-addon">st</span>
+                                </div>
+                                <!-- <p class="list-group-item-text">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                                    Lorem ipsum dolor sit amet. </p> -->
+
+                                <hr>
+                            </div>
+                            <div class="list-group-item no-border">
+                                <h4 class="list-group-item-heading">Genomsnittlig vårdtid <button type="button"
+                                        class="btn btn-default btn-xs btn-tooltip" data-toggle="tooltip"
+                                        data-placement="top"
+                                        title="Genomsnittlig vårdtid vid elektiva operationer, inklusive operationsdag. Här förutsätts vårddygnskostnad på 6 000 kr.">?</button>
+                                </h4>
+                                <div class="input-group input-group-lg">
+                                    <input id="los" type="number" class="form-control" placeholder="4" value="4">
+                                    <span class="input-group-addon">dygn</span>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="list-group-item no-border">
+                                <h4 class="list-group-item-heading">Andel strykningar <button type="button"
+                                        class="btn btn-default btn-xs btn-tooltip" data-toggle="tooltip"
+                                        data-placement="top"
+                                        title="Andel strykningar, oavsett orsak. Här förutsätts att 25 % av strykningar beror på patientberoende faktorer såsom adherence- och kommunikationsmissar.">?</button>
+                                </h4>
+                                <div class=" input-group input-group-lg">
+                                    <input id="foc" type="number" class="form-control" placeholder="10" value="10">
+                                    <span class="input-group-addon">%</span>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="list-group-item no-border">
+                                <p class="list-group-item-text text-muted" style="font-size: 14px">
+                                    Det här är bara ett urval av faktorerna som påverkar vinsterna med Operationskollen
+                                    -
+                                    Kontakta oss för en fullständig uträkning!
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xs-8 col-xs-push-2 col-md-push-0 col-md-6">
+                    <h3>Frigjorda resurser</h3>
+                    <hr>
+                    <h2 id="savings">
+                        <span class="number"></span>
+                    </h2>
+                    <canvas id="myChart" width="400" height="400"
+                        style="max-height: 400px; max-width: 400px;margin-left: auto;margin-right:auto; pointer-events: none;"></canvas>
+                </div>
+                <div class="col-xs-8 col-xs-push-2 col-md-push-0 col-md-3">
+                    <h3>Dessutom</h3>
+                    <hr>
+                    <div class="feature-item">
+                        <i class="icon-anchor text-primary"></i>
+                        <p class="text">Bättre adherence</p>
+                        <p class="text-muted">Med bättre stöd ges patienten bättre förutsättningar att följa
+                            riktlinjerna!</p><a href="#features">Läs mer</a>
                         <hr>
+                    </div>
+                    <div class="feature-item">
+                        <i class="icon-support text-primary"></i>
+                        <p class="text">Ökad trygghet</p>
+                        <p class="text-muted">Att känna sig trygg med sin vård ska vara en rättighet - Inte en lyx.</p>
+                        <a href="#who">Läs mer</a>
+                        <hr>
+                    </div>
+                    <div class="feature-item">
+                        <i class="icon-star text-primary"></i>
+                        <p class="text">Mer delaktighet</p>
+                        <p class="text-muted">Införstådda, trygga patienter är delaktiga patienter - Delaktiga patienter
+                            ger bättre vård.</p><a href="#features">Läs mer</a>
                     </div>
                 </div>
             </div>
+            <hr>
             <div class="row">
-                <div class="col-md-12">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <a href="https://www.medtech4healthinnovationaward.se/lar-kanna-2018-ars-finalister/"
-                                        target="_blank">
-                                        <img class="award-img vitalis" src="img/M4H-logo-crunch.png" />
-                                        <h3>
-                                            Medtech4Health Innovation Award
-                                        </h3>
-                                    </a>
-                                    <p class="text-muted">Medtech4Health Innovation award lyfter implementeringar av
-                                        medicinteknik som leder till
-                                        betydelsefulla förbättringar av vården. Detta för att lyfta fram goda exempel
-                                        och
-                                        sprida dessa som inspiration för andra.
-                                        <br>
-                                        <br>Operationskollen var 2018 en av tre finalister i tävlingen som avgjordes på
-                                        Swedish
-                                        Medtechs årsmöte. Du kan läsa mer om priset på länken nedan eller se filmen
-                                        lite
-                                        längre ned på denna sida.
-                                        <br>
-                                        <a href="https://www.medtech4healthinnovationaward.se/lar-kanna-2018-ars-finalister/"
-                                            target="_blank">Läs mer</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <a href="https://div.socialstyrelsen.se/app-bidrar-i-utvecklingen" target="_blank">
-                                        <img class="award-img ss" src="img/ss-logo-2-crunch.png" />
-                                        <h3>
-                                            Socialstyrelsen
-                                        </h3>
-                                    </a>
-                                    <p class="text-muted">Socialstyrelsen har valt att lyfta fram Operationskollen som
-                                        ett gott exempel på verksamhetsintegrerad
-                                        IT-utveckling i den e-utbildning som tagits fram för att inspirera till att
-                                        arbeta
-                                        med digital verksamhetsutveckling.
-                                        <br>
-                                        <br>På deras hemsida kan du läsa mer om hur Operationskollen skapar
-                                        förutsättningar för
-                                        verksamhetsförändring och hur arbetet med Operationskollen hos Ortopedkliniken
-                                        i
-                                        Västerås gått till.
-                                        <br>
-                                        <a href="https://div.socialstyrelsen.se/app-bidrar-i-utvecklingen"
-                                            target="_blank">Läs
-                                            mer</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <a href="https://www.dagensmedicin.se/artiklar/2017/04/04/har-ar-arets-vassa-bidrag/"
-                                        target="_blank">
-                                        <img class="award-img vitalis" src="img/dm-logo-crunch.png" />
-                                        <h3>
-                                            Guldskalpellen
-                                        </h3>
-                                    </a>
-                                    <p class="text-muted">Guldskalpellen delas ut av Dagens Medicin för att belöna
-                                        insatser och initiativ som leder
-                                        till ökad kvalitet på sjukvården i Sverige. Operationskollen var 2017 en av
-                                        finalister
-                                        till Guldskalpellen tillsammans med Ortopedkliniken i Västerås.
-                                        <br>
-                                        <br>I och med den stora kvalitetsförbättring som skedde i samband med att
-                                        Ortopedikliniken
-                                        i Västerås införde Operationskollen och gjorde om sin elektiva verksamhet
-                                        nominerades
-                                        arbetet till priset, ett av Sveriges största sjukvårdspris.
-                                        <br>
-                                        <a href="https://www.dagensmedicin.se/artiklar/2017/04/04/har-ar-arets-vassa-bidrag/"
-                                            target="_blank">Läs mer</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <a href="https://vitalis.nu/finalister-vitalis-stipendium/" target="_blank">
-                                        <img class="award-img vitalis" src="img/vitalis-logo-crunch.png" />
-                                        <h3>
-                                            Vitalis Stipendium
-                                        </h3>
-                                    </a>
-                                    <p class="text-muted">Operationskollen var 2018 en av tre finalister till Vitalis
-                                        Stipendium, ett pris som
-                                        delas ut för att lyfta och uppmärksamma initiativ som genom digitalisering och
-                                        nytänkande
-                                        skapar nytta för individ, verksamhet eller samhälle.
-                                        <br>
-                                        <br>Priset delas ut på Vitalis som med sina 5 000 deltagare är Nordens ledande
-                                        konferens
-                                        och mässa kring eHälsa och framtidens vård och omsorg.
-                                        <br>
-                                        <a href="https://vitalis.nu/finalister-vitalis-stipendium/" target="_blank">Läs
-                                            mer</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3"></div>
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <a href="https://www.facebook.com/guldstank/posts/2203126729709843" target="_blank">
-                                        <img class="award-img vitalis" src="img/guldstank-crunch.png" />
-                                        <h3>
-                                            Guldstänk
-                                        </h3>
-                                    </a>
-                                    <p class="text-muted">
-                                        Årets Innovatör utses av Almi Mälardalen.
-                                        Priset delas ut till en innovativ person, team eller företag som på ett
-                                        föredömligt sätt arbetat fram en tjänst eller produkt som i något avseende är
-                                        helt ny för marknaden. Operationskollen var 2018 en av tre finalister till
-                                        priset.
-                                        <br>
-                                        <br>"Genom att sätta individen i fokus och skapa trygghet för patienten och dess
-                                        närstående har man genom ny teknik skapat användarvänlighet och helhetsbild
-                                        genom hela flödet samt ett personligt bemötande. Företagets lösning
-                                        effektiviserar och frigör användandet av spetskompetens vilket ger stora
-                                        kostnadsbesparingar för samhället."
-                                        <br>
-                                        <a href="https://www.facebook.com/guldstank/posts/2203126729709843"
-                                            target="_blank">Läs mer</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-3"></div>
-                        </div>
-                    </div>
+                <div class="col-xs-8 col-xs-push-2 col-md-6 col-md-push-3">
+                    <h3>Nästa steg?</h3>
+                    <p class="text-muted">Kontakta oss så går vi igenom uträkningen och utifrån era förutsättningar och
+                        utmaningar
+                        kan vi ta fram en anpassad modell för att se hur Operationskollen kan hjälpa er klinik.</p>
+                    <a href="#contact" class="btn btn-outline btn-xl page-scroll">Kontakta oss</a>
+                    <a href="http://eepurl.com/dkJdIj" class="btn btn-outline btn-xl page-scroll"
+                        onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=755, height=755'); return false;">Bli
+                        kontaktad</a>
                 </div>
             </div>
         </div>
@@ -634,7 +575,7 @@
     <section id="procedure" class="features bg-secondary">
         <div class="container" style="position:relative">
             <div class="row">
-                <div class="col-lg-12 col-md-8 text-center">
+                <div class="col-md-8 col-md-push-2 text-center">
                     <div class="section-heading">
                         <h2>Hur går det till?</h2>
                         <p class="text">Operationskollen skräddarsys för varje klinik.
@@ -713,7 +654,9 @@
                                         patienter hjälper
                                         vi er genom hela implementationsprocessen. Intresserad av hur
                                         implementationsprocessen
-                                        går till? Kontakta oss så berättar vi mer.</p>
+                                        går till? Kontakta oss så berättar vi mer eller se hur er klinik kan vinna på
+                                        att använda operationskollen.</p>
+                                    <a href="#value" class="btn btn-outline btn-xl page-scroll">Räkna på värdet</a>
                                     <a href="#contact" class="btn btn-outline btn-xl page-scroll">Kontakta oss</a>
                                     <a href="http://eepurl.com/dkJdIj" class="btn btn-outline btn-xl page-scroll"
                                         onclick="window.open(this.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=755, height=755'); return false;">Bli
@@ -726,7 +669,366 @@
             </div>
         </div>
     </section>
-    <section id="team" class="download bg-primary text-center">
+    <section id="who" class="download bg-white text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="section-heading">För vem?</h2>
+                    <p class="text ah-headline">
+                        <span>Anpassad efter din</span>
+                        <span class="ah-words-wrapper">
+                            <b class="is-visible">mamma</b>
+                            <b>patient</b>
+                            <b>bror</b>
+                            <b>patient</b>
+                            <b>syster</b>
+                            <b>patient</b>
+                            <b>pappa</b>
+                            <b>patient</b>
+                        </span>
+                    </p>
+                    <img src="img/queue.svg" width="75%" />
+                    <p class="text">
+                        Operationskollen är till för att användas av både patienter och deras närstående.</p>
+                    <p class="text">Genomsnittsålder för patienter skiljer sig stort mellan olika grupper -
+                        <u>Appen är från grunden designad för en äldre målgrupp</u> än de flesta appar för att bättre
+                        möta dina
+                        patienters behov.
+                    </p>
+                    <p class="text">
+                        <u>Design</u> är nämligen inte bara hur någonting ser ut, det är också hur det fungerar -
+                        Operationskollen
+                        är
+                        <u>designad</u> från grunden för att just din patient och dennes närstående ska ha så bra
+                        förutsättningar
+                        som möjligt för att kunna tillgodogöra sig din information.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials" class="features bg-secondary download">
+        <div class="container" style="position:relative">
+            <div class="row">
+                <div class="text-center">
+                    <div class="section-heading">
+                        <h2>Referenser</h2>
+                        <p class="text">Du behöver inte ta vårt ord för det - Se vad våra kunder och användare säger
+                            själva!
+                        </p>
+                        <!-- <img src="img/winner_y.svg" width="30%" /> -->
+                        <div class='titanic titanic-star'></div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-1">
+                                <div class="feature-item">
+                                    <h3><span class="lquote">&ldquo;</span><b>Toppenbra!</b> Man är lite vilsen inför en
+                                        stor operation och denna app hjälpte mig mycket.<span
+                                            class="rquote">&rdquo;</span></h3>
+                                    <p class="text-muted">
+                                        Ulf, patient
+                                    </p>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-md-offset-2">
+                                <div class="feature-item">
+                                    <h3><span class="lquote">&ldquo;</span>Detta är en kanon app. Helt <b>otroligt
+                                            bra</b>.<span class="rquote">&rdquo;</span></h3>
+                                    <p class="text-muted">
+                                        Stina, patient
+                                    </p>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <div class="feature-item">
+                                    <h3><span class="lquote">&ldquo;</span>Alltså ert uppdateringsflöde är ju <b>helt
+                                            fantastiskt</b>, jag är så imponerad.</h3>
+                                    <h3>Vi hade det som framgångsfaktor på vår redovisning att det varit <b>lätt att
+                                            samarbeta med er på Operationskollen</b>.</h3>
+                                    <h3>Hade vi inte
+                                        haft appen hade vårt förbättringsarbete blivit platt fall, ingenting.<span
+                                            class="rquote">&rdquo;</span></h3>
+                                    <p class="text-muted">
+                                        Viveka Larsson, Operationskoordinator, Ortopedkliniken Länssjukhuset Ryhov
+                                    </p>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-1">
+                                <div class="feature-item">
+                                    <h3><span class="lquote">&ldquo;</span>Jag fick svar på frågor och efter var just de
+                                        små enkla rörelserna i mobilen bra. Mobilen fick följa med in i badrummet och
+                                        <b>jag kunde göra gympan kontrollerat</b>.<span class="rquote">&rdquo;</span>
+                                    </h3>
+                                    <p class="text-muted">
+                                        Anders, patient
+                                    </p>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-md-offset-2">
+                                <div class="feature-item">
+                                    <h3><span class="lquote">&ldquo;</span>Jag vill bara tacka för att Operationskollen
+                                        finns. Jag har haft <b>så mycket nytta och glädje av att ha den i min
+                                            telefon</b>. Fantastiskt.<span class="rquote">&rdquo;</span></h3>
+                                    <p class="text-muted">
+                                        Anna, patient
+                                    </p>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <p class="text-muted small bottom text-center">Av integritetsskäl används
+                                    fingerade
+                                    patientnamn.
+                                    Vissa referenser
+                                    har kortats ned.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="customers" class="bg-primary download">
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+                    <div class="section-heading">
+                        <h2>Fotavtryck</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center text-uppercase">
+                    <p>
+                        <div class="regions-num">
+                            <h3 style="font-size:55px;">3</h3>
+                            <h3>regioner</h3>
+                        </div>
+                    </p>
+                    <hr>
+                    <p>
+                        <div class="sites-num">
+                            <h2>6</h2>
+                            <h3>sjukhus</h3>
+                        </div>
+                    </p>
+                    <hr>
+                    </p>
+                    <p>
+                        <div class="users-num">
+                            <h2>><span class="count">5000</span></h2>
+                            <h3>användare</h3>
+                        </div>
+                    </p>
+                </div>
+                <div class="col-md-8">
+                    <p class="text">
+                        Lorem ipsum color dit amet. Lorem ipsum color dit amet. Lorem ipsum color dit amet.
+                        Lorem ipsum
+                        color dit amet. Lorem ipsum color dit amet. Lorem ipsum color dit amet. Lorem ipsum
+                        color dit
+                        amet. Lorem ipsum color dit amet. Lorem ipsum color dit amet. Lorem ipsum color dit
+                        amet. Lorem
+                        ipsum color dit amet.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="awards" class="download text-center bg-white features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="section-heading">
+                        <h2 class="gold">Utmärkelser</h2>
+                        <p class="text">Operationskollens innovativa lösningar på dagens och morgondagens
+                            utmaningar i
+                            hälso- och sjukvården
+                            har uppmärksammats av flera olika aktörer.
+                            <br> Här kan du läsa mer om ett axplock.</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <a href="https://www.medtech4healthinnovationaward.se/lar-kanna-2018-ars-finalister/"
+                                        target="_blank">
+                                        <img class="award-img vitalis" src="img/M4H-logo-crunch.png" />
+                                        <h3>
+                                            Medtech4Health Innovation Award
+                                        </h3>
+                                    </a>
+                                    <p class="text-muted">Medtech4Health Innovation award lyfter
+                                        implementeringar av
+                                        medicinteknik som leder till
+                                        betydelsefulla förbättringar av vården. Detta för att lyfta fram goda
+                                        exempel
+                                        och
+                                        sprida dessa som inspiration för andra.
+                                        <br>
+                                        <br>Operationskollen var 2018 en av tre finalister i tävlingen som
+                                        avgjordes på
+                                        Swedish
+                                        Medtechs årsmöte. Du kan läsa mer om priset på länken nedan eller se
+                                        filmen
+                                        lite
+                                        längre ned på denna sida.
+                                        <br>
+                                        <a href="https://www.medtech4healthinnovationaward.se/lar-kanna-2018-ars-finalister/"
+                                            target="_blank">Läs mer</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <a href="https://div.socialstyrelsen.se/app-bidrar-i-utvecklingen" target="_blank">
+                                        <img class="award-img ss" src="img/ss-logo-2-crunch.png" />
+                                        <h3>
+                                            Socialstyrelsen
+                                        </h3>
+                                    </a>
+                                    <p class="text-muted">Socialstyrelsen har valt att lyfta fram
+                                        Operationskollen som
+                                        ett gott exempel på verksamhetsintegrerad
+                                        IT-utveckling i den e-utbildning som tagits fram för att inspirera till
+                                        att
+                                        arbeta
+                                        med digital verksamhetsutveckling.
+                                        <br>
+                                        <br>På deras hemsida kan du läsa mer om hur Operationskollen skapar
+                                        förutsättningar för
+                                        verksamhetsförändring och hur arbetet med Operationskollen hos
+                                        Ortopedkliniken
+                                        i
+                                        Västerås gått till.
+                                        <br>
+                                        <a href="https://div.socialstyrelsen.se/app-bidrar-i-utvecklingen"
+                                            target="_blank">Läs
+                                            mer</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <a href="https://www.dagensmedicin.se/artiklar/2017/04/04/har-ar-arets-vassa-bidrag/"
+                                        target="_blank">
+                                        <img class="award-img vitalis" src="img/dm-logo-crunch.png" />
+                                        <h3>
+                                            Guldskalpellen
+                                        </h3>
+                                    </a>
+                                    <p class="text-muted">Guldskalpellen delas ut av Dagens Medicin för att
+                                        belöna
+                                        insatser och initiativ som leder
+                                        till ökad kvalitet på sjukvården i Sverige. Operationskollen var 2017 en
+                                        av
+                                        finalister
+                                        till Guldskalpellen tillsammans med Ortopedkliniken i Västerås.
+                                        <br>
+                                        <br>I och med den stora kvalitetsförbättring som skedde i samband med
+                                        att
+                                        Ortopedikliniken
+                                        i Västerås införde Operationskollen och gjorde om sin elektiva
+                                        verksamhet
+                                        nominerades
+                                        arbetet till priset, ett av Sveriges största sjukvårdspris.
+                                        <br>
+                                        <a href="https://www.dagensmedicin.se/artiklar/2017/04/04/har-ar-arets-vassa-bidrag/"
+                                            target="_blank">Läs mer</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <a href="https://vitalis.nu/finalister-vitalis-stipendium/" target="_blank">
+                                        <img class="award-img vitalis" src="img/vitalis-logo-crunch.png" />
+                                        <h3>
+                                            Vitalis Stipendium
+                                        </h3>
+                                    </a>
+                                    <p class="text-muted">Operationskollen var 2018 en av tre finalister till
+                                        Vitalis
+                                        Stipendium, ett pris som
+                                        delas ut för att lyfta och uppmärksamma initiativ som genom
+                                        digitalisering och
+                                        nytänkande
+                                        skapar nytta för individ, verksamhet eller samhälle.
+                                        <br>
+                                        <br>Priset delas ut på Vitalis som med sina 5 000 deltagare är Nordens
+                                        ledande
+                                        konferens
+                                        och mässa kring eHälsa och framtidens vård och omsorg.
+                                        <br>
+                                        <a href="https://vitalis.nu/finalister-vitalis-stipendium/" target="_blank">Läs
+                                            mer</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <a href="https://www.facebook.com/guldstank/posts/2203126729709843" target="_blank">
+                                        <img class="award-img vitalis" src="img/guldstank-crunch.png" />
+                                        <h3>
+                                            Guldstänk
+                                        </h3>
+                                    </a>
+                                    <p class="text-muted">
+                                        Årets Innovatör utses av Almi Mälardalen.
+                                        Priset delas ut till en innovativ person, team eller företag som på ett
+                                        föredömligt sätt arbetat fram en tjänst eller produkt som i något
+                                        avseende är
+                                        helt ny för marknaden. Operationskollen var 2018 en av tre finalister
+                                        till
+                                        priset.
+                                        <br>
+                                        <br>"Genom att sätta individen i fokus och skapa trygghet för patienten
+                                        och dess
+                                        närstående har man genom ny teknik skapat användarvänlighet och
+                                        helhetsbild
+                                        genom hela flödet samt ett personligt bemötande. Företagets lösning
+                                        effektiviserar och frigör användandet av spetskompetens vilket ger stora
+                                        kostnadsbesparingar för samhället."
+                                        <br>
+                                        <a href="https://www.facebook.com/guldstank/posts/2203126729709843"
+                                            target="_blank">Läs mer</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="team" class="download bg-secondary text-center">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
@@ -746,7 +1048,8 @@
                     <p class="text-muted">Han sitter även i styrelsen för
                         <b>Apotekarsocietetens sektion för läkemedelsinformation</b> och driver där poddcasten
                         <b>Läkemedelspodden</b> som belyser aktuella ämnen inom läkemedelsområdet.</p>
-                    <p class="text-muted">Jesper brinner för hälso- och sjukvårdsutveckling och tror att förbättrade
+                    <p class="text-muted">Jesper brinner för hälso- och sjukvårdsutveckling och tror att
+                        förbättrade
                         IT-lösningar är en vital och
                         nödvändig del av morgondagens sjukvård!</p>
                 </div>
@@ -764,9 +1067,11 @@
                         <b>verksamhetsintegrerade IT-system</b>
                         och är välrenommerad expert inom projekt- och portföljhantering.</p>
                     <p class="text-muted">Som
-                        <b>patient och närstående</b> har Kerem själv sett hur dagens sjukvård kan producera vård i
+                        <b>patient och närstående</b> har Kerem själv sett hur dagens sjukvård kan producera
+                        vård i
                         <b>världsklass</b>!</p>
-                    <p class="text-muted">Samtidigt dras man med stora ineffektiviteter och har stora utmaningar med
+                    <p class="text-muted">Samtidigt dras man med stora ineffektiviteter och har stora utmaningar
+                        med
                         att informera och engagera
                         patienter och deras närstående.
                     </p>
@@ -781,12 +1086,14 @@
                         <img class="avatar" src="img/avatar.christopher.jpg">
                     </div>
                     <p class="text-muted">
-                        <b>Christopher af Bjur</b> är en agil javascriptuptvecklare med erfarenhet från annonsbranschen
+                        <b>Christopher af Bjur</b> är en agil javascriptuptvecklare med erfarenhet från
+                        annonsbranschen
                         med fokus på
                         <b>skalbara javascriptlösningar</b> och användarförståelse.</p>
                     <p class="text-muted">Från sina erfarenheter i sjukvården har Christopher själv upplevt hur
                         <b>svårt</b> det kan vara att vara patient.</p>
-                    <p class="text-muted">Det vill Christopher vara med att ändra på - För att se till att alla som
+                    <p class="text-muted">Det vill Christopher vara med att ändra på - För att se till att alla
+                        som
                         möter sjukvården, gör det med samma goda verktyg för att vara aktiva och delaktiga!
                     </p>
                 </div>
@@ -798,7 +1105,8 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <h2 class="section-heading">Testa själv</h2>
-                    <p>Ladda ned Operationskollen gratis till iOS och android och se hur dina patienter skulle kunna
+                    <p>Ladda ned Operationskollen gratis till iOS och android och se hur dina patienter skulle
+                        kunna
                         engageras
                         i, och ta ansvar för, sin egen sjukvård.</p>
                     <div class="badges">
@@ -899,6 +1207,12 @@
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
+    <!-- OnScreen -->
+    <script type="text/javascript" src="https://unpkg.com/onscreen/dist/on-screen.umd.min.js"></script>
+    <script type="text/javascript">
+        var os = new OnScreen();
+    </script>
+
     <!-- Theme JavaScript -->
     <script src="js/new-age.min.js"></script>
 
@@ -908,90 +1222,22 @@
     <!-- Animated headlines -->
     <script src="lib/animatedheadline/jquery.animatedheadline.min.js"></script>
 
+    <!-- Sliders -->
+    <script src="lib/bootstrap-slider/bootstrap-slider.min.js"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <script>
+        var titanic = new Titanic();
+    </script>
+
+    <!-- klaro.js -->
     <script src="lib/klaro/config.js"></script>
     <script src="lib/klaro/klaro.js"></script>
 
-    <script>
-        $(document).ready(
-            function () {
-                $(document.body).trigger("sticky_kit:recalc");
-                $(window).resize(function () {
-                    stick();
-                });
-                stick();
-            }
-        )
+    <!-- Custom scripts -->
+    <script src="js/index.min.js"></script>
 
-        function stick() {
-            if ($(window).width() > 991) {
-                $(".device-col").stick_in_parent({
-                    bottoming: false
-                });
-            } else {
-                $(".device-col").trigger("sticky_kit:detach");
-            }
-        }
-
-        function imageSwitcher() {
-            t = 2500; //Initial wait
-            s = 7500; //Stepper
-            setTimeout(function () {
-                $("img.five").css('opacity', 0);
-                $("img.one").css('opacity', 1);
-                $("img.top").css('opacity', 0);
-            }, t);
-            setTimeout(function () {
-                $("img.top").css('opacity', 1);
-            }, t = t + s);
-            setTimeout(function () {
-                $("img.one").css('opacity', 0);
-                $("img.two").css('opacity', 1);
-                $("img.top").css('opacity', 0);
-            }, t = t + s);
-            setTimeout(function () {
-                $("img.top").css('opacity', 1);
-            }, t = t + s);
-
-            setTimeout(function () {
-                $("img.two").css('opacity', 0);
-                $("img.three").css('opacity', 1);
-                $("img.top").css('opacity', 0);
-            }, t = t + s);
-            setTimeout(function () {
-                $("img.top").css('opacity', 1);
-            }, t = t + s);
-
-            setTimeout(function () {
-                $("img.three").css('opacity', 0);
-                $("img.four").css('opacity', 1);
-                $("img.top").css('opacity', 0);
-            }, t = t + s);
-            setTimeout(function () {
-                $("img.top").css('opacity', 1);
-            }, t = t + s);
-
-            setTimeout(function () {
-                $("img.four").css('opacity', 0);
-                $("img.five").css('opacity', 1);
-                $("img.top").css('opacity', 0);
-            }, t = t + s);
-            setTimeout(function () {
-                $("img.top").css('opacity', 1);
-            }, t = t + s);
-            setTimeout(function () {
-                imageSwitcher();
-            }, t = t + s - 2500);
-        }
-        imageSwitcher();
-
-        function callPhone() {
-            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                location.href = "tel://0707720795"
-            } else {
-                $('#telephoneModal').modal("show")
-            }
-        }
-    </script>
     <script type="opt-in" data-type="application/javascript" data-name="googleAnalytics">
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -1047,43 +1293,6 @@
             if ($(this).scrollTop() >= $('#healthcare').position().top) {
                 canOnlyFireOnce();
             }
-        });
-    </script>
-    <script>
-        var animationDelay = 2500;
-
-        animateHeadline($('.cd-headline'));
-
-        function animateHeadline($headlines) {
-            $headlines.each(function () {
-                var headline = $(this);
-                //trigger animation
-                setTimeout(function () {
-                    hideWord(headline.find('.is-visible'))
-                }, animationDelay);
-                //other checks here ...
-            });
-
-            function hideWord($word) {
-                var nextWord = takeNext($word);
-                switchWord($word, nextWord);
-                setTimeout(function () {
-                    hideWord(nextWord)
-                }, animationDelay);
-            }
-
-            function takeNext($word) {
-                return (!$word.is(':last-child')) ? $word.next() : $word.parent().children().eq(0);
-            }
-
-            function switchWord($oldWord, $newWord) {
-                $oldWord.removeClass('is-visible').addClass('is-hidden');
-                $newWord.removeClass('is-hidden').addClass('is-visible');
-            }
-        }
-        $('.header-content').animatedHeadline();
-        $('#who').animatedHeadline({
-            animationType: "type"
         });
     </script>
 </body>
