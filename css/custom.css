@@ -322,6 +322,12 @@ max-height:80px;
 .award-img.vitalis {
   }
 
+  .award-img.skapa {
+    max-height: 110px;
+    margin-top: -20px;
+    margin-bottom: -10px;
+  }
+
   .gold {
     color:	#D5AD6D; /*if no support for background-clip*/
     background: -webkit-linear-gradient(transparent, transparent),
