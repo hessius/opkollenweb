@@ -183,10 +183,6 @@ section#features.features .feature-item a:hover {
   color: #fff;
 }
 
-section#value {
-  border-top-width: 1px;
-  border-color:red;
-}
 section#testimonials {
   /* padding: 50px 0 0 0; */
 }
@@ -232,36 +228,37 @@ section#testimonials.bg-primary:before {
   color:#f7f7f7
 }
 
-section#value .section-heading hr {
+#value .section-heading hr {
   max-width: 50%;
 }
 
-section#value .feature-item {
+#value .feature-item {
   margin-top:14px;
 }
 
-section#value .feature-item i {
-  font-size: 30px;
+#value .feature-item i {
+  font-size: 50px;
+  margin-bottom:6px;
 }
 
-section#value .feature-item p {
+#value .feature-item p {
   margin-bottom: 0px;
 }
 
-section#value .feature-item p.text-muted {
+#value .feature-item p.text-muted {
   font-size: 16px;
 }
 
-section#value .feature-item hr {
+#value .feature-item hr {
   margin: 15px auto 0;
 }
 
-section#value .btn-outline {
+#value .btn-outline {
   color: #fdcc52;
   border: 3px solid #fdcc52;
   border-image-slice: 1;
 }
-section#value .btn-outline:hover {
+#value .btn-outline:hover {
   color: #fff;
 }
 
@@ -377,6 +374,10 @@ li.social-phone a:hover,
 
 #telephoneModal .modal-title {
   text-align: center;
+}
+
+.modal-content h2 {
+  font-size: 50px;
 }
 
 .chatcontainer {
