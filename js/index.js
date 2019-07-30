@@ -394,7 +394,7 @@ var customerCounter = {
             Counter: $(this).text()
           },
           {
-            duration: 10000,
+            duration: 30000,
             easing: 'easeInOutQuart',
             step: function (now) {
               $(this).text(Math.ceil(now))
@@ -406,6 +406,6 @@ var customerCounter = {
       console.log(customerCounter.counting)
       customerCounter.counting = false
       console.log(customerCounter.counting)
-    }, 10050)
+    }, 30050)
   }
 }

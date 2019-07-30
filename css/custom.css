@@ -323,6 +323,21 @@ h3 span.rquote, h2 span.rquote {
 bottom: 130px;
 right: 0;
 }
+
+.press h3, .press h2 {
+  position: relative;
+}
+
+.press h3 span.lquote, .press h2 span.lquote {
+  top: 20px;
+  left: -30px;
+}
+
+.press h3 span.rquote, .press h2 span.rquote {
+  bottom: -40px;
+  right: -20px;
+  }
+
 section.bg-primary {
   background: #ffc228;
 background: -webkit-linear-gradient(#ffc228,#d6a21f);
