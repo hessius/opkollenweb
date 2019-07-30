@@ -367,43 +367,9 @@ $(document).ready(function () {
 
   $('[data-toggle="tooltip"]').tooltip()
 
-  $('.count').each(function () {
-    $(this)
-      .prop('Counter', 0)
-      .animate(
-        {
-          Counter: $(this).text()
-        },
-        {
-          duration: 5000,
-          easing: 'swing',
-          step: function (now) {
-            $(this).text(Math.ceil(now))
-          }
-        }
-      )
-  })
-
   os.on('enter', '#customers', function (element, event) {
     console.log('enter customers')
-    once(function () {
-      $('#customers .count').each(function () {
-        $(this)
-          .prop('Counter', 0)
-          .animate(
-            {
-              Counter: $(this).text()
-            },
-            {
-              duration: 5000,
-              easing: 'easeInOutQuart',
-              step: function (now) {
-                $(this).text(Math.ceil(now))
-              }
-            }
-          )
-      })
-    })
+    customerCounter.doCount()
   })
   os.on('enter', '#who', function (element, event) {
     console.log('enter who')
@@ -412,3 +378,34 @@ $(document).ready(function () {
     })
   })
 })
+
+var customerCounter = {
+  counting: false,
+  doCount: function () {
+    if (this.counting) {
+      return
+    }
+    this.counting = true
+    $('#customers .count').each(function () {
+      $(this)
+        .prop('Counter', 0)
+        .animate(
+          {
+            Counter: $(this).text()
+          },
+          {
+            duration: 10000,
+            easing: 'easeInOutQuart',
+            step: function (now) {
+              $(this).text(Math.ceil(now))
+            }
+          }
+        )
+    })
+    setTimeout(function () {
+      console.log(customerCounter.counting)
+      customerCounter.counting = false
+      console.log(customerCounter.counting)
+    }, 10050)
+  }
+}
