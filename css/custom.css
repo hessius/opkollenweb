@@ -689,7 +689,10 @@ margin:auto;
   position: absolute;
   top: 20%;
   width: 80px;
-  left: calc(50% - 60px);
+  left: calc(50% - 40px);
+}
+.rocket-col {
+  min-height: 80vh;
 }
 .rocket .rocket-body {
   width: 80px;
