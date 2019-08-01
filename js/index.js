@@ -409,3 +409,9 @@ var customerCounter = {
     }, 30050)
   }
 }
+
+function updateEmailAddresses () {
+  let arr = $('.mailgo')
+  $.each(arr, (i)=>$(arr[i]).text($(arr[i]).text().replace('[a]', '@')))
+}
+updateEmailAddresses() 

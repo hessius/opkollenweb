@@ -299,6 +299,48 @@ section.bg-secondary {
   animation: gradientAnim 30s ease infinite;
 }
 
+section.eu {
+  background: #003399;
+  position: relative;
+  color:#fff;
+}
+
+section.eu .row {
+  margin-bottom:40px;
+}
+
+section.eu .eu-stars-container {
+  height:100%;
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}
+
+section.eu .eu-stars {
+  background: url(../img/eu-flag.svg);
+  background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index:0;
+    position:absolute;
+    top: calc(50% - 2500px);
+    left: -50vw;
+    -webkit-animation:spin 520s linear infinite;
+    -moz-animation:spin 520s linear infinite;
+    animation: spin 520s linear infinite;
+    height: 5000px;
+    width: 200vw;
+    transform-origin: center;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 section#awards.features .feature-item a {
   color: #fdcc52;
   border: none;
