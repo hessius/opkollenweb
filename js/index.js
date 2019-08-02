@@ -182,8 +182,14 @@ function chartOptions () {
       ]
     },
     options: {
+      responsive: true,
       tooltips: {
         enabled: false
+      },
+      legend: {
+        labels: {
+          fontSize: getBootstrapDeviceSize() === 'xs' ? 8 : 12
+        }
       }
       // scales: {
       //     yAxes: [{
@@ -207,7 +213,9 @@ function calcValue () {
   var number =
     costData().savingsDaysSaved.data() +
     costData().savingsReducedCancellations.data()
-  $('#savings .number').html(SEKcurrency(number))
+  $('#savings .number')
+    .html(SEKcurrency(number))
+    .css('overflow-wrap', 'break-word')
   myChart = new Chart(ctx, chartOptions())
 }
 
@@ -342,6 +350,13 @@ function once (fn, context) {
   }
 }
 
+function getBootstrapDeviceSize () {
+  return $('#users-device-size')
+    .find('div:visible')
+    .first()
+    .attr('id')
+}
+
 // .d88b. 8b  8    888b. 8888    db    888b. Yb  dP
 // 8P  Y8 8Ybm8    8  .8 8www   dPYb   8   8  YbdP
 // 8b  d8 8  "8    8wwK' 8     dPwwYb  8   8   YP
@@ -412,6 +427,12 @@ var customerCounter = {
 
 function updateEmailAddresses () {
   let arr = $('.mailgo')
-  $.each(arr, (i)=>$(arr[i]).text($(arr[i]).text().replace('[a]', '@')))
+  $.each(arr, i =>
+    $(arr[i]).text(
+      $(arr[i])
+        .text()
+        .replace('[a]', '@')
+    )
+  )
 }
-updateEmailAddresses() 
+updateEmailAddresses()
