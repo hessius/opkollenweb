@@ -238,6 +238,12 @@ section#testimonials.bg-primary:before {
   color:#f7f7f7
 }
 
+#testimonials .feature-item a {
+  color:#fff;
+  border-bottom: 2px solid #fdcc52;
+  font-weight: 600;
+}
+
 #value .section-heading hr {
   max-width: 50%;
 }
@@ -624,7 +630,7 @@ span.ah-words-wrapper {
 }
 
 #team p.text-muted {
-  text-align: justify;
+  text-align: center;
 }
 
 .avatar-container {
