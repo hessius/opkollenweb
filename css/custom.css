@@ -174,7 +174,7 @@ header {
 }
 
 #healthcare {
-  background: url(https://operationskollen.se/img/duotone-crunch.png), linear-gradient(253deg, #00c6fb, #005bea);
+  background: url(https://operationskollen.se/img/duotone-10-crunch.png), linear-gradient(253deg, #00c6fb, #005bea);
   background-size: cover;
 }
 
@@ -379,7 +379,6 @@ section.eu .eu-stars-container {
 }
 
 section.eu .eu-stars {
-  background: url(../img/eu-flag.svg);
   background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -710,6 +709,7 @@ span.ah-words-wrapper {
 img.avatar {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
 }
 
 @keyframes float {
@@ -795,6 +795,16 @@ margin:auto;
   100% {
     opacity:0;
   }
+}
+
+img.lazy {
+  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+  filter: blur(5px);
+  transition: filter 0.5s ease-in-out;
+}
+img.lazy.loaded{
+  -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
+  filter: blur(0px);
 }
 
 /* Rocket animation */

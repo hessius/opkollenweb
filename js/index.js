@@ -392,6 +392,10 @@ $(document).ready(function () {
       animationType: 'type'
     })
   })
+  window.lazyLoadInstance = new LazyLoad({
+    elements_selector: '.lazy'
+    // ... more custom settings?
+  })
 })
 
 var customerCounter = {
