@@ -122,30 +122,36 @@ footer {
   vertical-align: middle;
 }
 
+section.features .spoiler .section-heading {
+  margin-bottom:0;
+}
 
 .spoiler-circle.testimonials-circle {
-  color: #114B5F;
-  border-color: #114B5F;
+  /* color: #114B5F;
+  border-color: #114B5F; */
+  background: #58ABE5;  
 }
 
 .spoiler-circle.awards-circle {
-  color: #E1A71A;
-  border-color: #E1A71A;
+  /* color: #E1A71A;
+  border-color: #E1A71A; */
+  background: #F6C324;
 }
 
 .spoiler-circle.team-circle {
-  color: #114B5F;
-  border-color: #114B5F;
+  /* color: #114B5F;
+  border-color: #114B5F; */
+  background: #51D177;
 }
 
-#spoiler p {
+.spoiler p {
   padding: 0 10px 0 10px
 }
 
-#spoiler a.no-deco {
-  color:rgb(51, 51, 51);
+.spoiler a.no-deco {
+  color:#fff;
 }
-#spoiler a.no-deco:hover {
+.spoiler a.no-deco:hover {
   text-decoration:none;
 }
 
