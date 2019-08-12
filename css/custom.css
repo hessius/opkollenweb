@@ -100,7 +100,7 @@ footer {
 }
 
 #spoiler {
-  padding: 15px 0 5px 0
+  padding: 0px 0 5px 0
 }
 
 .spoiler-circle {
@@ -214,7 +214,7 @@ header {
   }
 }
 
-section#video {
+section#video, section#spoiler {
   background:rgba(249,249,249,1)
 }
 
