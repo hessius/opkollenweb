@@ -174,7 +174,7 @@ header {
 }
 
 #healthcare {
-  background: url(https://operationskollen.se/img/duotone-10-crunch.png), linear-gradient(253deg, #00c6fb, #005bea);
+  background: linear-gradient(253deg, #00c6fb, #005bea);
   background-size: cover;
 }
 
@@ -329,7 +329,6 @@ section#testimonials.bg-primary:before {
 }
 
 .num-container {
-  background: url(../img/sweden.svg);
   background-size:contain;
   background-position:center;
   background-repeat: no-repeat;
