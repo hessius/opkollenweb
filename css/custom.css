@@ -378,6 +378,7 @@ section.eu .eu-stars-container {
 }
 
 section.eu .eu-stars {
+  background:url(../img/eu-flag.svg);
   background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
