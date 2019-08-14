@@ -300,6 +300,12 @@ section#testimonials.bg-primary:before {
   font-weight: 600;
 }
 
+#testimonials .text-notice {
+  margin-bottom: -50px;
+  position: relative;
+  bottom: -100px;
+}
+
 #value .section-heading hr {
   max-width: 50%;
 }
