@@ -248,9 +248,9 @@ function animateHeadline ($headlines) {
     return !$word.is(':last-child')
       ? $word.next()
       : $word
-        .parent()
-        .children()
-        .eq(0)
+          .parent()
+          .children()
+          .eq(0)
   }
 
   function switchWord ($oldWord, $newWord) {
@@ -392,6 +392,7 @@ $(document).ready(function () {
       animationType: 'type'
     })
   })
+  updateYear()
 })
 
 var customerCounter = {
@@ -435,4 +436,12 @@ function updateEmailAddresses () {
     )
   )
 }
+
+function updateYear () {
+  let d = new Date()
+  let y = d.getFullYear()
+
+  $('.currentYear').html(y)
+}
+
 updateEmailAddresses()
