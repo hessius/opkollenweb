@@ -1166,3 +1166,36 @@ img.lazy.loaded {
     opacity: 0.7;
   }
 }
+#synergy .section-heading h2.lefth2, #synergy .section-heading h2.righth2, #synergy .section-heading .col-md-6  {
+padding:0;
+}
+#synergy .section-heading h2.righth2 {
+text-align: left;
+}
+#synergy .section-heading h2.lefth2 {
+text-align: right;
+}
+.synergyList {
+  position: relative;
+  font-weight: 900;
+  margin-bottom:120px;
+  color: #005bea
+}
+.synergyList .letters {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  opacity: 0; 
+  font-size: 70px;
+}
+#synergy .section-heading {
+  margin-bottom:50px;
+  }
+h2.preSynergyList{
+  font-size: 40px;
+}
+#synergy hr {
+  margin-top:50px;
+}

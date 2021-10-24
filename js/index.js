@@ -6,7 +6,7 @@
 
 var ctx = document.getElementById('myChart').getContext('2d')
 
-function costData () {
+function costData() {
   var data = {
     weeks: {
       label: 'Veckor med opererande verksamhet (per år)',
@@ -138,24 +138,24 @@ function costData () {
   return data
 }
 
-function chartData () {
+function chartData() {
   return [
     costData().savingsDaysSaved.data(),
     costData().savingsReducedCancellations.data()
   ]
 }
 
-function chartOptions () {
+function chartOptions() {
   return {
     type: 'doughnut',
     data: {
       labels: [
         costData().savingsDaysSaved.label +
-          ' ' +
-          SEKcurrency(costData().savingsDaysSaved.data()),
+        ' ' +
+        SEKcurrency(costData().savingsDaysSaved.data()),
         costData().savingsReducedCancellations.label +
-          ' ' +
-          SEKcurrency(costData().savingsReducedCancellations.data())
+        ' ' +
+        SEKcurrency(costData().savingsReducedCancellations.data())
       ],
       datasets: [
         {
@@ -202,14 +202,14 @@ function chartOptions () {
   }
 }
 
-function SEKcurrency (number) {
+function SEKcurrency(number) {
   return number.toLocaleString('sv-SE', {
     style: 'currency',
     currency: 'SEK'
   })
 }
 
-function calcValue () {
+function calcValue() {
   var number =
     costData().savingsDaysSaved.data() +
     costData().savingsReducedCancellations.data()
@@ -226,7 +226,7 @@ function calcValue () {
 
 var animationDelay = 2500
 
-function animateHeadline ($headlines) {
+function animateHeadline($headlines) {
   $headlines.each(function () {
     var headline = $(this)
     // trigger animation
@@ -236,7 +236,7 @@ function animateHeadline ($headlines) {
     // other checks here ...
   })
 
-  function hideWord ($word) {
+  function hideWord($word) {
     var nextWord = takeNext($word)
     switchWord($word, nextWord)
     setTimeout(function () {
@@ -244,16 +244,16 @@ function animateHeadline ($headlines) {
     }, animationDelay)
   }
 
-  function takeNext ($word) {
+  function takeNext($word) {
     return !$word.is(':last-child')
       ? $word.next()
       : $word
-          .parent()
-          .children()
-          .eq(0)
+        .parent()
+        .children()
+        .eq(0)
   }
 
-  function switchWord ($oldWord, $newWord) {
+  function switchWord($oldWord, $newWord) {
     $oldWord.removeClass('is-visible').addClass('is-hidden')
     $newWord.removeClass('is-hidden').addClass('is-visible')
   }
@@ -264,7 +264,7 @@ function animateHeadline ($headlines) {
 //  8  8  "  8 8b  d8        d8   YbdPYbdP    8    8   8b    8   8 8    8wwK'
 // 888 8     8 `Y88P'    `Y88P'    YP  YP    888   8   `Y88P 8   8 8888 8  Yb
 
-function stick () {
+function stick() {
   if ($(window).width() > 991) {
     $('.device-col').stick_in_parent({
       bottoming: false
@@ -274,7 +274,7 @@ function stick () {
   }
 }
 
-function imageSwitcher () {
+function imageSwitcher() {
   var t = 2500 // Initial wait
   var s = 7500 // Stepper
   setTimeout(function () {
@@ -325,7 +325,7 @@ function imageSwitcher () {
   }, (t = t + s - 2500))
 }
 
-function callPhone () {
+function callPhone() {
   if (
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
@@ -337,7 +337,7 @@ function callPhone () {
   }
 }
 
-function once (fn, context) {
+function once(fn, context) {
   var result
 
   return function () {
@@ -350,7 +350,7 @@ function once (fn, context) {
   }
 }
 
-function getBootstrapDeviceSize () {
+function getBootstrapDeviceSize() {
   return $('#users-device-size')
     .find('div:visible')
     .first()
@@ -426,7 +426,7 @@ var customerCounter = {
   }
 }
 
-function updateEmailAddresses () {
+function updateEmailAddresses() {
   let arr = $('.mailgo')
   $.each(arr, i =>
     $(arr[i]).text(
@@ -437,11 +437,72 @@ function updateEmailAddresses () {
   )
 }
 
-function updateYear () {
+function updateYear() {
   let d = new Date()
   let y = d.getFullYear()
 
   $('.currentYear').html(y)
 }
+
+var synergyList = {};
+synergyList.opacityIn = [0, 1];
+synergyList.scaleIn = [0.2, 1];
+synergyList.scaleOut = 3.5;
+synergyList.durationIn = 600;
+synergyList.durationOut = 400;
+synergyList.delay = 2000;
+
+anime.timeline({ loop: true })
+  .add({
+    targets: '.synergyList .letters-1',
+    opacity: synergyList.opacityIn,
+    scale: synergyList.scaleIn,
+    duration: synergyList.durationIn
+  }).add({
+    targets: '.synergyList .letters-1',
+    opacity: 0,
+    scale: synergyList.scaleOut,
+    duration: synergyList.durationOut,
+    easing: "easeInExpo",
+    delay: synergyList.delay
+  }).add({
+    targets: '.synergyList .letters-2',
+    opacity: synergyList.opacityIn,
+    scale: synergyList.scaleIn,
+    duration: synergyList.durationIn
+  }).add({
+    targets: '.synergyList .letters-2',
+    opacity: 0,
+    scale: synergyList.scaleOut,
+    duration: synergyList.durationOut,
+    easing: "easeInExpo",
+    delay: synergyList.delay
+  }).add({
+    targets: '.synergyList .letters-3',
+    opacity: synergyList.opacityIn,
+    scale: synergyList.scaleIn,
+    duration: synergyList.durationIn
+  }).add({
+    targets: '.synergyList .letters-3',
+    opacity: 0,
+    scale: synergyList.scaleOut,
+    duration: synergyList.durationOut,
+    easing: "easeInExpo",
+    delay: synergyList.delay
+  }).add({
+    targets: '.synergyList .letters-4',
+    opacity: synergyList.opacityIn,
+    scale: synergyList.scaleIn,
+    duration: synergyList.durationIn
+  }).add({
+    targets: '.synergyList .letters-4',
+    opacity: 0,
+    scale: synergyList.scaleOut,
+    duration: synergyList.durationOut,
+    easing: "easeInExpo",
+    delay: synergyList.delay
+  });
+
+
 
 updateEmailAddresses()
